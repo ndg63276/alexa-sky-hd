@@ -94,4 +94,7 @@ Alexa Smart Home skills require account linking, so you need to set up OAuth2.
 2. Touch Sky Box, it should say Account Linking Required.
 3. Click Enable.
 4. Log in with your Amazon username and password. Make sure to select Keep Me Signed In.
-5. It should tell you you have successfully linked your account, and prompt you to Discover Devices. Do that and i should find your Sky box, and add some scenes.
+5. It should tell you you have successfully linked your account, and prompt you to Discover Devices. Do that and it should find your Sky box, and add some scenes.
+
+## Thank yous
+This wouldn't have been possible without the work by dalhundal, and in particular his sky-remote-cli project (https://github.com/dalhundal/sky-remote-cli)
