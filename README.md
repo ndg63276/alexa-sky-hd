@@ -16,41 +16,9 @@
 
 ### Download code from github
 
-1. Click on the green "Clone or download" button just under the yellow bar
-2. Click download ZIP
-3. Unzip the file (it will be called alexa-skybox-master.zip) to a known place on your hard-drive
-
-### AWS Lambda Setup
-
-1. Go to http://aws.amazon.com/. You will need to set-up an AWS account (the basic one will do fine) if you don't have one already. Make sure you use the same Amazon account that your Echo device is registered to. **Note - you will need a credit or debit card to set up an AWS account - there is no way around this. There should be no charges from using this skill in a normal way, though I am not resposible if there are.**
-2.  Go to the drop down "Location" menu at the top right and ensure you select "EU (Ireland)". This is important as not many regions support Alexa. 
-3. Select Lambda from the AWS Services menu at the top left
-4. Click on the "Create Function" button.
-5. Select "Author From Scratch", and name the Lambda Function :-
-  
-    ```
-    SkyBox
-    ```
-6. Select the runtime as "Python 2.7".
-7. Set the Role as "Create a Custom Role".
-8. In the new window that opens, set the IAM Role as "Create a New IAM Role", and set the Role Name as "lambda_basic_execution", then click Allow.
-9. Back in the Lambda Management window, click "Create Function".
-10. Under "Add Triggers", select "Alexa Skills Kit" (NOTE - if you do not see Alexa Skill Kit as an option then you are in the wrong AWS region). Under "Configure Triggers", click "Add".
-11. In the middle of the screen, click on the box that says "SkyBox".
-12. Under "Function Code", make sure Runtime says "Python 2.7", and Handler says "lambda_function.lambda_handler"
-13. Under "Code Entry Type", select "Upload a .ZIP file".
-14. Click on the "Upload" button. Go to the folder where you unzipped the files you downloaded from Github, select Alexa-Skybox.zip and click open. Do not upload the alexa-skybox-master.zip you downloaded from Github - only the Alexa-Skybox.zip contained within it.
-15. Enter the following into the Environment Variables Section:
-
-|Key           | Value|
-|--------------| -----|
-|HOST       |(Put your DtDNS address here, eg this_is_my_static_ip_1235.dtdns.net)|
-|PORT       |(Put the port you forwarded in here, eg 51111)|
-|HD          |(If you have Sky HD, put True here, otherwise put False)|
-
-
-16. Click "Save" in the top right. This will upload the Alexa-Skybox.zip file to Lambda. This may take a few minutes depending on your connection speed.
-17. Copy the ARN from the top right to be used later in the Alexa Skill Setup (it's the text after ARN - it won't be in bold and will look a bit like this arn:aws:lambda:eu-west-1:XXXXXXX:function:Skybox). Hint - Paste it into notepad or similar.
+1. Click on the green "Clone or download" button just under the yellow bar.
+2. Click download ZIP.
+3. Unzip the file (it will be called alexa-sky-hd-master.zip) to a known place on your hard-drive.
 
 ### OAuth2 Setup
 Alexa Smart Home skills require account linking, so you need to set up OAuth2.
@@ -68,6 +36,42 @@ Alexa Smart Home skills require account linking, so you need to set up OAuth2.
 5. Click the "Create Skill" box towards the top right.
 6. Name your skill something sensible like 'Sky Box', and click Next.
 7. Set "Smart Home" as the Skill type, and click 'Create Skill'.
+8. In the address bar, you will see an address like:
+https://developer.amazon.com/alexa/console/ask/build/prebuilts/config/**amzn1.ask.skill.abcdefrandomcharacters**/development/en_GB/smartHome.
+Make a note of everything between config/ and /development, this is your Application ID, and will be something like:
+amzn.ask.skill.bacf6378-76b7-8734-bcd5-23f456abcdef
+9. Keep this browser tab open.
+
+### AWS Lambda Setup
+
+1. Go to http://aws.amazon.com/. You will need to set-up an AWS account (the basic one will do fine) if you don't have one already. Make sure you use the same Amazon account that your Echo device is registered to. **Note - you will need a credit or debit card to set up an AWS account - there is no way around this. There should be no charges from using this skill in a normal way, though I am not resposible if there are.**
+2.  Go to the drop down "Location" menu at the top right and ensure you select "EU (Ireland)". This is important as not many regions support Alexa. 
+3. Select Lambda from the AWS Services menu at the top left
+4. Click on the "Create Function" button.
+5. Select "Author From Scratch", and name the Lambda Function 'SkyBox'
+6. Select the runtime as "Python 2.7".
+7. Set the Role as "Create a Custom Role".
+8. In the new window that opens, set the IAM Role as "Create a New IAM Role", and set the Role Name as "lambda_basic_execution", then click Allow.
+9. Back in the Lambda Management window, click "Create Function".
+10. Under "Add Triggers", select "Alexa Smart Home" (NOTE - if you do not see Alexa Smart Home as an option then you are in the wrong AWS region). Under "Configure Triggers", in the box that says Application ID, put your Application ID from earlier, something like amzn.ask.skill.bacf6378-76b7-8734-bcd5-23f456abcdef. Then click Add/
+11. In the middle of the screen, click on the box that says "SkyBox".
+12. Under "Function Code", make sure Runtime says "Python 2.7", and Handler says "lambda_function.lambda_handler"
+13. Under "Code Entry Type", select "Upload a .ZIP file".
+14. Click on the "Upload" button. Go to the folder where you unzipped the files you downloaded from Github, select Alexa-Skybox.zip and click open. Do not upload the alexa-sky-hd-master.zip you downloaded from Github - only the Alexa-Skybox.zip contained within it.
+15. Enter the following into the Environment Variables Section:
+
+|Key           | Value|
+|--------------| -----|
+|HOST          |(Put your DtDNS address here, eg this_is_my_static_ip_1235.dtdns.net)|
+|PORT          |(Put the port you forwarded in here, eg 51111)|
+|HD            |(If you have Sky HD, put True here, otherwise put False)|
+
+
+16. Click "Save" in the top right. This will upload the Alexa-Skybox.zip file to Lambda. This may take a few minutes depending on your connection speed.
+17. Copy the ARN from the top right to be used later in the Alexa Skill Setup (it's the text after ARN - it won't be in bold and will look a bit like this arn:aws:lambda:eu-west-1:XXXXXXX:function:Skybox). Hint - Paste it into notepad or similar.
+
+### More Alexa Skill setup
+1. Go back to the browser tab from the Alexa Skill Setup section, it should be on a Smart Home setup screen. If you have closed the tab, go to https://developer.amazon.com/alexa/console/ask, find your Skill, and click Edit.
 8. Set the payload version as v3, and the 'Default Endpoint' as the ARN you copied earlier, then click Save at the top right.
 9. Go to 'Account Linking' on the left.
 10. The Authorization URI is https://www.amazon.com/ap/oa
@@ -78,7 +82,7 @@ Alexa Smart Home skills require account linking, so you need to set up OAuth2.
 15. The Authorization Grant Type is Auth Code Grant.
 16. The Access Token URI is https://api.amazon.com/auth/o2/token
 17. The Client Secret is the Client Secret you made a note of earlier.
-18.  The Client Authentication Scheme is HTTP Basic.
+18. The Client Authentication Scheme is HTTP Basic.
 19. Click Save.
 
 ### Finish the account linking
