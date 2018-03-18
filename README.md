@@ -37,9 +37,9 @@ Alexa Smart Home skills require account linking, so you need to set up OAuth2.
 6. Name your skill something sensible like 'Sky Box', and click Next.
 7. Set "Smart Home" as the Skill type, and click 'Create Skill'.
 8. In the address bar, you will see an address like:
-https://developer.amazon.com/alexa/console/ask/build/prebuilts/config/**amzn1.ask.skill.abcdefrandomcharacters**/development/en_GB/smartHome.
+https://developer.amazon.com/alexa/console/ask/build/prebuilts/config/amzn1.ask.skill.abcdefrandomcharacters/development/en_GB/smartHome.
 Make a note of everything between config/ and /development, this is your Application ID, and will be something like:
-amzn.ask.skill.bacf6378-76b7-8734-bcd5-23f456abcdef
+amzn1.ask.skill.bacf6378-76b7-8734-bcd5-23f456abcdef
 9. Keep this browser tab open.
 
 ### AWS Lambda Setup
