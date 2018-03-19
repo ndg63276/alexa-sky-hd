@@ -140,13 +140,6 @@ appliances = [
 
 
 def lambda_handler(request, context):
-    """Main Lambda handler.
-
-    Since you can expect both v2 and v3 directives for a period of time during the migration
-    and transition of your existing users, this main Lambda handler must be modified to support
-    both v2 and v3 requests.
-    """
-
     try:
         logger.info("Directive:")
         logger.info(json.dumps(request, indent=4, sort_keys=True))
@@ -210,7 +203,6 @@ def get_channel_number(channels, channel_request):
                     channel_number = key
     return channel_number
 
-# v3 handlers
 def handle_discovery(request):
     endpoints = []
     for appliance in appliances:
@@ -232,44 +224,41 @@ def handle_discovery(request):
     return response
 
 def handle_non_discovery(request):
-    print("***")
-    print(request)
-    print("***")
     request_namespace = request["directive"]["header"]["namespace"]
     request_name = request["directive"]["header"]["name"]
-
+    namespace = "Alexa"
+    name = "Response"
+    commands = []
+    properties = []
+    
     if request_namespace == "Alexa.PowerController":
         response_name = "powerState"
         if request_name == "TurnOn":
+            commands.append('sky')
             value = "ON"
-            command = 'sky'
         else:
+            commands.append('power')
             value = "OFF"
-            command = 'power'
         properties = [ {
-                        "namespace": request_namespace,
-                        "name": response_name,
-                        "value": value,
-                        "timeOfSample": get_utc_timestamp(),
-                        "uncertaintyInMilliseconds": 500
-                    } ]
-        print properties
-        send_command(command)
-            
+            "namespace": "Alexa.PowerController",
+            "name": "powerState",
+            "value": value,
+            "timeOfSample": get_utc_timestamp(),
+            "uncertaintyInMilliseconds": 500
+        } ]
+
     elif request_namespace == "Alexa.PlaybackController":
         if request_name == "Play":
-            command="play"
+            commands.append("play")
         elif request_name == "Pause":
-            command="pause"
+            commands.append("pause")
         elif request_name == "FastForward":
-            command="fastforward"
+            commands.append("fastforward")
         elif request_name == "Rewind":
-            command="rewind"
+            commands.append("rewind")
         elif request_name == "Stop":
-            command="backup"
-        send_command(command)
-        properties = []
-    
+            commands.append("backup")
+
     elif request_namespace == "Alexa.ChannelController":
         if request_name == "ChangeChannel":
             if 'name' in request["directive"]["payload"]["channelMetadata"]:
@@ -292,70 +281,64 @@ def handle_non_discovery(request):
                 channel_number = get_channel_number(channels, channel_request)
             channel_name = channels[channel_number][0]
             for i in str(channel_number):
-                send_command(i)
-            properties = [ {
-                        "namespace": request_namespace,
-                        "name": "channel",
-                        "value": {
-                            "number": str(channel_number),
-                            "callSign": channel_name,
-                            },
-                        "timeOfSample": get_utc_timestamp(),
-                        "uncertaintyInMilliseconds": 500
-                    } ]
+                commands.append(i)
+
         elif request_name == "SkipChannels":
             increment = request["directive"]["payload"]["channelCount"]
-            properties = []
             if increment == 1:
-                send_command('channelup')
+                commands.append('channelup')
             if increment == -1:
-                send_command('channeldown')
+                commands.append('channeldown')
 
     elif request_namespace == "Alexa.SceneController":
         endpointId = request['directive']['endpoint']['endpointId']
+        namespace = request["directive"]["header"]["namespace"]
         if endpointId == "skybox-tvguide":
             if request_name == "Activate":
-                send_command('tvguide')
-                send_command('select')
-                send_command('select')
+                commands.append('tvguide')
+                commands.append('select')
+                commands.append('select')
                 name = "ActivationStarted"
             if request_name == "Deactivate":
-                send_command('sky')
+                commands.append('sky')
                 name = "DeactivationStarted"
         elif endpointId == "skybox-subtitles":
             if request_name == "Activate":
                 name = "ActivationStarted"
             if request_name == "Deactivate":
                 name = "DeactivationStarted"       
-            send_command('help')
-            send_command('down')
-            send_command('right')
-            send_command('select')
+            commands.append('help')
+            commands.append('down')
+            commands.append('right')
+            commands.append('select')
         elif endpointId == "skybox-audio-description":
             if request_name == "Activate":
                 name = "ActivationStarted"
             if request_name == "Deactivate":
                 name = "DeactivationStarted"       
-            send_command('help')
-            send_command('right')
-            send_command('select')
+            commands.append('help')
+            commands.append('right')
+            commands.append('select')
         elif endpointId == "skybox-info":
             if request_name == "Activate":
                 name = "ActivationStarted"
             if request_name == "Deactivate":
                 name = "DeactivationStarted"       
-            send_command('i')
-        return make_scene_response(request, name)
-    return make_response(request, properties)
+            commands.append('i')
+    for command in commands:
+        send_command(command)
+    return make_response(request, properties, namespace, name)
 
-def make_scene_response(request, name):
+def make_response(request, properties, namespace, name):       
     response = {
-        "context" : { },
+        "context": {
+            "properties": properties
+        },
         "event": {
             "header": {
                 "messageId": get_uuid(),
                 "correlationToken": request["directive"]["header"]["correlationToken"],
-                "namespace": request["directive"]["header"]["namespace"],
+                "namespace": namespace,
                 "name": name,
                 "payloadVersion": "3"
             },
@@ -374,32 +357,6 @@ def make_scene_response(request, name):
             }
         }
     }
-    return response
-
-
-def make_response(request, properties):       
-    response = {
-            "context": {
-                "properties": properties
-            },
-            "event": {
-                "header": {
-                    "namespace": "Alexa",
-                    "name": "Response",
-                    "payloadVersion": "3",
-                    "messageId": get_uuid(),
-                    "correlationToken": request["directive"]["header"]["correlationToken"]
-                },
-                "endpoint": {
-                    "scope": {
-                        "type": "BearerToken",
-                        "token": "access-token-from-Amazon"
-                    },
-                    "endpointId": request["directive"]["endpoint"]["endpointId"]
-                },
-                "payload": {}
-            }
-        }
     return response
 
 def send_command(command):
