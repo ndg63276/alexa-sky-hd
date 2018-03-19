@@ -406,8 +406,8 @@ def get_capabilities(appliance):
                     "supported": [
                         { "name": "powerState" }
                     ],
-                    "proactivelyReported": True,
-                    "retrievable": True
+                    "proactivelyReported": False,
+                    "retrievable": False
                 }
             },
             {  
@@ -437,7 +437,7 @@ def get_capabilities(appliance):
               "interface": "Alexa.SceneController",
               "version" : "3",
               "supportsDeactivation" : True,
-              "proactivelyReported" : True
+              "proactivelyReported" : False
             }
           ]
     # additional capabilities that are required for each endpoint
@@ -449,8 +449,8 @@ def get_capabilities(appliance):
             "supported":[
                 { "name":"connectivity" }
             ],
-            "proactivelyReported": True,
-            "retrievable": True
+            "proactivelyReported": False,
+            "retrievable": False
         }
     }
     alexa_interface_capability = {
