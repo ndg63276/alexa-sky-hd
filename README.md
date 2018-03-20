@@ -2,10 +2,11 @@
 **Unofficial Sky HD digibox skill for Alexa**
 ## Skill commands
 1. Power on/off: "Alexa, turn on Sky box"
-2. Change channel: "Alexa, change channel to BBC One"
-3. TV Guide: "Alexa, turn on TV Guide"
-4. Subtitles / Audio description: "Alexa, turn on subtitles/audio description"
-5. Info: "Alexa, turn on info"
+2. Change channel: "Alexa, change channel to BBC One (on Sky box)"
+3. Playback control: "Alexa, pause/play/rewind/fast forward (on Sky box)"
+4. TV Guide: "Alexa, turn on TV Guide"
+5. Subtitles / Audio description: "Alexa, turn on subtitles/audio description"
+6. Info: "Alexa, turn on info"
 ### Known issues
 For various reasons, changing to the following channels seems to struggle:
 ITV3, Sky Sports Mix, Sky One+1, ITV1+1
