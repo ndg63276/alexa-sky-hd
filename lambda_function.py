@@ -173,7 +173,7 @@ def get_channels():
         names.append(chan['t'])
         names.append(str(chan['lcn']))
         replacements = [('f1','f. one'),('one','1'),('two','2'),('three','3'),('four','4'),
-                        ('five','5'),('syfy','sci-fi')]
+                        ('five','5'),('syfy','sci-fi'),('skypremierehd','sky premiere hd'),('sky prem+1','sky premiere+1')]
         for f,r in replacements:
             if f in chan['t'].lower():
                 names.append(chan['t'].lower().replace(f,r).replace('+',' plus '))
