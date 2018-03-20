@@ -5,6 +5,12 @@
 2. Change channel: "Alexa, change channel to BBC One"
 3. TV Guide: "Alexa, turn on TV Guide"
 4. Subtitles / Audio description: "Alexa, turn on subtitles/audio description"
+5. Info: "Alexa, turn on info"
+### Known issues
+For various reasons, changing to the following channels seems to struggle:
+ITV3, Sky Sports Mix, Sky One+1, ITV1+1
+### Routines
+Don't forget, you can use Routines in the Alexa app to create shortcuts for this skill. For example, set up a routine so that "Alexa, TV Guide" turns on the TV Guide.
 ## Setup Instructions
 ### Set up your router to allow access to Sky box IP address
 1. This section will open your internet connection slightly. It is pretty harmless, but I am not responsible for anything bad that happens because of it.
