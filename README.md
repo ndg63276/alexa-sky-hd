@@ -19,9 +19,9 @@ Don't forget, you can use Routines in the Alexa app to create shortcuts for this
 2. Forward a random TCP port (eg 51111) to port 49160 on this IP address.
 How to do this depends heavily on your router. The best thing to do is to go to https://portforward.com/router.htm, ignore the popups to use their Network Utilities software, find your router in the list and follow the instructions there.
 3. Configure a static IP address for your router.
-Again, this is router dependent, but generally you need a service like http://www.dtdns.com. Go to that website, create a free account, and then go to 'Hostnames'. Choose a unique hostname like this_is_my_static_ip_12345, and just use domain dtdns.net, then click Add Hostname.
+Again, this is router dependent, but generally you need a service like http://www.dtdns.com or http://www.noip.com. Go to that website, create a free account, and then go to 'Hostnames'. Choose a unique hostname like this_is_my_static_ip_12345, and just use domain dtdns.net, then click Add Hostname.
 If you have a BT Home Hub 5, go to http://192.168.1.254/, then go to Advanced Settings, then Broadband, then Dynamic DNS. Enable Dynamic DNS, and put in your dtdns login details, with service 'DtDNS', and host 'this_is_my_static_ip_12345.dtdns.net'. Click Apply, and Refresh, and check you are connected.
-If you have another router, do a google search for 'dynamic dns setup' and the name of your router, and hopefully you will find some instructions.
+If your router doesn't support DtDNS, you could try http://www.noip.com - there are also some instructions at https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/. If you have another router, do a google search for 'dynamic dns setup' and the name of your router, and hopefully you will find some instructions.
 4. If you want to check your static IP address and port forwarding, go to https://repl.it/@ndg63276/PortForwardingTester, press Run and it should guide you through.
 
 ### Download code from github
