@@ -65,6 +65,7 @@ amzn1.ask.skill.bacf6378-76b7-8734-bcd5-23f456abcdef
 |HOST          |(Put your DtDNS address here, eg this_is_my_static_ip_1235.dtdns.net)|
 |PORT          |(Put the port you forwarded in here, eg 51111)|
 |HD            |(If you have Sky HD, put True here, otherwise put False)|
+|SKY_BOX_NAME  |(Whatever you call your Sky box, eg Sky Box, or Sky HD)|
 
 
 16. Click "Save" in the top right. This will upload the Alexa-Skybox.zip file to Lambda. This may take a few minutes depending on your connection speed.

@@ -18,6 +18,10 @@ from fuzzywuzzy import fuzz
 # Setup logger
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
+try:
+	sky_box_name = environ['SKY_BOX_NAME']
+except:
+	sky_box_name = 'Sky Box'
 
 commands = {
         "power": 0,
@@ -70,7 +74,7 @@ appliances = [
         "manufacturerName": "Sky",
         "modelName": "Digibox",
         "version": "1",
-        "friendlyName": "Sky Box",
+        "friendlyName": sky_box_name,
         "description": "Sky Digibox",
         "isReachable": True,
         "displayCategories":["TV"],
@@ -268,7 +272,7 @@ def handle_non_discovery(request):
             else:
                 return make_response(request, [])
             if 'on sky box' in channel_request:
-                channel_request = channel_request.replace('on sky box','')
+                channel_request = channel_request.replace('on '+sky_box_name.lower(),'')
             print("channel_request: "+channel_request)
             channel_number = None
             channels = get_channels()
