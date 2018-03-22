@@ -177,7 +177,7 @@ def get_channels():
         names.append(chan['t'])
         names.append(str(chan['lcn']))
         replacements = [('f1','f. one'),('one','1'),('two','2'),('three','3'),('four','4'),
-                        ('five','5'),('syfy','sci-fi')]
+                        ('five','5'),('syfy','sci-fi'),('skypremierehd','sky premiere hd'),('sky prem+1','sky premiere+1')]
         for f,r in replacements:
             if f in chan['t'].lower():
                 names.append(chan['t'].lower().replace(f,r).replace('+',' plus '))
@@ -410,8 +410,8 @@ def get_capabilities(appliance):
                     "supported": [
                         { "name": "powerState" }
                     ],
-                    "proactivelyReported": True,
-                    "retrievable": True
+                    "proactivelyReported": False,
+                    "retrievable": False
                 }
             },
             {  
@@ -441,7 +441,7 @@ def get_capabilities(appliance):
               "interface": "Alexa.SceneController",
               "version" : "3",
               "supportsDeactivation" : True,
-              "proactivelyReported" : True
+              "proactivelyReported" : False
             }
           ]
     # additional capabilities that are required for each endpoint
@@ -453,8 +453,8 @@ def get_capabilities(appliance):
             "supported":[
                 { "name":"connectivity" }
             ],
-            "proactivelyReported": True,
-            "retrievable": True
+            "proactivelyReported": False,
+            "retrievable": False
         }
     }
     alexa_interface_capability = {

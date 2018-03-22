@@ -2,17 +2,27 @@
 **Unofficial Sky HD digibox skill for Alexa**
 ## Skill commands
 1. Power on/off: "Alexa, turn on Sky box"
-2. Change channel: "Alexa, change channel to BBC One"
-3. TV Guide: "Alexa, turn on TV Guide"
-4. Subtitles / Audio description: "Alexa, turn on subtitles/audio description"
+2. Change channel: "Alexa, change channel to BBC One (on Sky box)"
+3. Playback control: "Alexa, pause/play/rewind/fast forward (on Sky box)"
+4. TV Guide: "Alexa, turn on TV Guide"
+5. Subtitles / Audio description: "Alexa, turn on subtitles/audio description"
+6. Info: "Alexa, turn on info"
+### Known issues
+For various reasons, changing to the following channels seems to struggle:
+ITV3, Sky Sports Mix, Sky One+1, ITV1+1
+### Routines
+Don't forget, you can use Routines in the Alexa app to create shortcuts for this skill. For example, set up a routine so that "Alexa, Sky" turns on the Sky box.
 ## Setup Instructions
 ### Set up your router to allow access to Sky box IP address
 1. This section will open your internet connection slightly. It is pretty harmless, but I am not responsible for anything bad that happens because of it.
 1. On your Sky remote, press 'Services', then go to 'Settings', go to 'Network', and make a note of the 'IP address of this Sky box'. eg 192.168.1.124
 2. Forward a random TCP port (eg 51111) to port 49160 on this IP address.
-(How to do this depends heavily on your router. If you have a BT Home Hub 5, go to http://192.168.1.254/, then go to Advanced Settings, then Home Network, then click on the device with the IP address from above. Give this device a suitable name, eg SkyBox, and select 'Always use this IP address', and then click Apply. Then go to Firewall (still under Advanced Settings), and click 'Manage Games and Applications', then 'Add New Game or Application'. Give this a name like 'Sky', and put 'No' for copying an existing application. Select protocol 'TCP', port range 51111 - 51111, and Translate to 49160 - 49160. Click Apply. Then click 'Firewall' again, and select 'Sky' from the 'Game or Application' dropdown, and 'Skybox' from the 'Device' dropdown, and click 'Add', and then 'Apply'.)
+How to do this depends heavily on your router. The best thing to do is to go to https://portforward.com/router.htm, ignore the popups to use their Network Utilities software, find your router in the list and follow the instructions there.
 3. Configure a static IP address for your router.
-(Again, this is router dependent. If you have a BT Home Hub 5, you need a service like http://www.dtdns.com. Go to that website, create a free account, and then go to 'Hostnames'. Choose a unique hostname like this_is_my_static_ip_12345, and just use domain dtdns.net, then click Add Hostname. Then go to http://192.168.1.254/, then go to Advanced Settings, then Broadband, then Dynamic DNS. Enable Dynamic DNS, and put in your dtdns login details, with service 'DtDNS', and host 'this_is_my_static_ip_12345.dtdns.net'. Click Apply, and Refresh, and check you are connected.)
+Again, this is router dependent, but generally you need a service like http://www.dtdns.com. Go to that website, create a free account, and then go to 'Hostnames'. Choose a unique hostname like this_is_my_static_ip_12345, and just use domain dtdns.net, then click Add Hostname.
+If you have a BT Home Hub 5, go to http://192.168.1.254/, then go to Advanced Settings, then Broadband, then Dynamic DNS. Enable Dynamic DNS, and put in your dtdns login details, with service 'DtDNS', and host 'this_is_my_static_ip_12345.dtdns.net'. Click Apply, and Refresh, and check you are connected.
+If you have another router, do a google search for 'dynamic dns setup' and the name of your router, and hopefully you will find some instructions.
+4. If you want to check your static IP address and port forwarding, go to https://repl.it/@ndg63276/PortForwardingTester, press Run and it should guide you through.
 
 ### Download code from github
 
