@@ -271,7 +271,7 @@ def handle_non_discovery(request):
                 channel_request = request["directive"]["payload"]["channel"]["number"]
             else:
                 return make_response(request, [])
-            if 'on sky box' in channel_request:
+            if 'on '+sky_box_name.lower() in channel_request:
                 channel_request = channel_request.replace('on '+sky_box_name.lower(),'')
             print("channel_request: "+channel_request)
             channel_number = None
