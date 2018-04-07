@@ -1,4 +1,4 @@
-channels={
+{
 101:[u'BBC One', u'bbc 1'],
 102:[u'BBC Two HD', u'bbc 2 hd'],
 103:[u'ITV'],
