@@ -15,6 +15,7 @@ import socket
 from os import environ
 from botocore.vendored import requests
 from fuzzywuzzy import fuzz
+import ast
 # Setup logger
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -167,6 +168,17 @@ def get_utc_timestamp(seconds=None):
 def get_uuid():
     return str(uuid.uuid4())
     
+def get_channels():   
+    if 'HD' in environ and environ['HD'] == 'True':
+        url = 'https://raw.githubusercontent.com/ndg63276/alexa-sky-hd/master/channels-hd.json'
+    else:
+        url = 'https://raw.githubusercontent.com/ndg63276/alexa-sky-hd/master/channels-sd.json'
+    r=requests.get(url)
+    channels = ast.literal_eval(r.text)
+    return channels
+
+
+"""
 def get_channels():
     url = 'http://tv.sky.com/channel/index/4101-1'
     a = requests.get(url)
@@ -190,9 +202,13 @@ def get_channels():
         chan_number = chan['c'][1]
         channels[chan_number] = names
     return channels
+"""
 
 def get_channel_number(channels, channel_request):
-    hd = environ['HD'] == 'True'
+    if 'HD' in environ and environ['HD'] == 'True':
+        hd = True
+    else:
+        hd = False
     best_score = 0
     for key in channels.keys():
         for chan in channels[key]:
