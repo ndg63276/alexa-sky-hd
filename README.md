@@ -15,14 +15,16 @@ Don't forget, you can use Routines in the Alexa app to create shortcuts for this
 ## Setup Instructions
 ### Set up your router to allow access to Sky box IP address
 1. This section will open your internet connection slightly. It is pretty harmless, but I am not responsible for anything bad that happens because of it.
-1. On your Sky remote, press 'Services', then go to 'Settings', go to 'Network', and make a note of the 'IP address of this Sky box'. eg 192.168.1.124
-2. Forward a random TCP port (eg 51111) to port 49160 on this IP address.
+2. On your Sky remote, press 'Services', then go to 'Settings', go to 'Network', and make a note of the 'IP address of this Sky box'. eg 192.168.1.124
+3. Forward a random TCP port (eg 51111) to port 49160 on this IP address.
 How to do this depends heavily on your router. The best thing to do is to go to https://portforward.com/router.htm, ignore the popups to use their Network Utilities software, find your router in the list and follow the instructions there.
-3. Configure a static IP address for your router.
+4. Fix your Sky box's local IP address.
+While you are on your router's setup pages, you want to make sure your Sky box always gets the same address on your local network, otherwise the port forwarding will stop working. How to do this again depends on your router. On a BT Home Hub 5, go to Advanced Settings, Home Network, click on the device with the Sky box's IP address, and select 'Yes' to 'Always use this IP address'. On some routers, it may be under 'Address reservation'.
+5. Configure a static IP address for your router.
 Again, this is router dependent, but generally you need a service like http://www.dtdns.com or http://www.noip.com. Go to that website, create a free account, and then go to 'Hostnames'. Choose a unique hostname like this_is_my_static_ip_12345, and just use domain dtdns.net, then click Add Hostname.
 If you have a BT Home Hub 5, go to http://192.168.1.254/, then go to Advanced Settings, then Broadband, then Dynamic DNS. Enable Dynamic DNS, and put in your dtdns login details, with service 'DtDNS', and host 'this_is_my_static_ip_12345.dtdns.net'. Click Apply, and Refresh, and check you are connected.
 If your router doesn't support DtDNS, you could try http://www.noip.com - there are also some instructions at https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/. If you have another router, do a google search for 'dynamic dns setup' and the name of your router, and hopefully you will find some instructions.
-4. If you want to check your static IP address and port forwarding, go to https://repl.it/@ndg63276/PortForwardingTester, press Run and it should guide you through.
+6. If you want to check your static IP address and port forwarding, go to https://repl.it/@ndg63276/PortForwardingTester, press Run and it should guide you through.
 
 ### Download code from github
 
