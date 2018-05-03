@@ -169,7 +169,7 @@ def get_uuid():
     return str(uuid.uuid4())
     
 def get_channels():   
-    if 'HD' in environ and environ['HD'] == 'True':
+    if 'HD' in environ and environ['HD'] == True:
         url = 'https://raw.githubusercontent.com/ndg63276/alexa-sky-hd/master/channels-hd.json'
     else:
         url = 'https://raw.githubusercontent.com/ndg63276/alexa-sky-hd/master/channels-sd.json'
@@ -205,22 +205,37 @@ def get_channels():
 """
 
 def get_channel_number(channels, channel_request):
-    if 'HD' in environ and environ['HD'] == 'True':
+    hd = False
+    if 'HD' in environ and environ['HD'] == True:
         hd = True
-    else:
-        hd = False
+    plus_one_request = False
+    if ' plus one' in channel_request:
+        plus_one_request = channel_request.replace(' plus one', '')
+    print "plus_one_request: "+str(plus_one_request)
     best_score = 0
+    best_plus_one_score = 0
     for key in channels.keys():
         for chan in channels[key]:
             score = fuzz.ratio(chan.lower(), channel_request.lower())
             if score > best_score:
                 best_score = score
                 channel_number = key
+                print channel_number, score
             if hd:
                 score = fuzz.ratio(chan.lower(), channel_request.lower()+' hd')
                 if score >= best_score:
                     best_score = score
                     channel_number = key
+                    print channel_number, score
+            if plus_one_request:
+                plus_one_score = fuzz.ratio(chan.lower(), plus_one_request.lower())
+                if plus_one_score > best_plus_one_score:
+                    best_plus_one_score = plus_one_score
+                    plus_one_channel_number = key
+                    print plus_one_channel_number, plus_one_score
+    if plus_one_request:
+        if best_plus_one_score > best_score and plus_one_channel_number < 200:
+            channel_number = plus_one_channel_number + 100
     return channel_number
 
 def handle_discovery(request):
@@ -299,7 +314,6 @@ def handle_non_discovery(request):
                     raise
             except:
                 channel_number = get_channel_number(channels, channel_request)
-            channel_name = channels[channel_number][0]
             for i in str(channel_number):
                 commands.append(i)
 
