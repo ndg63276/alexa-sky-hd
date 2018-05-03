@@ -7,6 +7,11 @@
 4. TV Guide: "Alexa, turn on TV Guide"
 5. Subtitles / Audio description: "Alexa, turn on subtitles/audio description"
 6. Info: "Alexa, turn on info"
+### Updates
+7th April 2018: Sky seem to have removed the json page listing all their channels, so channel changing is broken. I have made my own version, but you will need to re-download Alexa-Skybox.zip and re-upload it to Lambda.
+
+3rd May 2018: Sky have renumbered lots of channels. Most should just work, but anything in the range 200-299 (plus one channels) will be broken, until you re-download Alexa-Skybox.zip and re-upload it to Lambda.
+
 ### Known issues
 For various reasons, changing to the following channels seems to struggle:
 ITV3, Sky Sports Mix, Sky One+1, ITV1+1
