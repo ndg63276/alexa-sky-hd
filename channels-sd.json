@@ -1,1198 +1,369 @@
 {
- "101": [
-  "bbc one", 
-  "bbc 1"
- ], 
- "102": [
-  "bbc two", 
-  "bbc 2"
- ], 
- "103": [
-  "itv"
- ], 
- "104": [
-  "channel 4", 
-  "channel four"
- ], 
- "105": [
-  "channel 5", 
-  "channel five"
- ], 
- "106": [
-  "sky one", 
-  "sky 1"
- ], 
- "107": [
-  "sky living"
- ], 
- "108": [
-  "sky atlantic"
- ], 
- "109": [
-  "w"
- ], 
- "110": [
-  "gold"
- ], 
- "111": [
-  "dave"
- ], 
- "112": [
-  "comedy central"
- ], 
- "113": [
-  "universal"
- ], 
- "114": [
-  "syfy", 
-  "sci-fi"
- ], 
- "115": [
-  "bbc one", 
-  "bbc 1"
- ], 
- "116": [
-  "bbc four", 
-  "bbc 4"
- ], 
- "117": [
-  "london live"
- ], 
- "118": [
-  "itv2", 
-  "itv two"
- ], 
- "119": [
-  "itv3", 
-  "itv three"
- ], 
- "120": [
-  "itv4", 
-  "itv four"
- ], 
- "121": [
-  "skysp mix", 
-  "sky sports mix"
- ], 
- "122": [
-  "sky arts"
- ], 
- "123": [
-  "sky two", 
-  "sky 2"
- ], 
- "124": [
-  "fox"
- ], 
- "125": [
-  "discovery"
- ], 
- "126": [
-  "mtv"
- ], 
- "127": [
-  "comedyxtra"
- ], 
- "128": [
-  "5star", 
-  "five star"
- ], 
- "129": [
-  "nat geo"
- ], 
- "130": [
-  "history"
- ], 
- "131": [
-  "itvbe"
- ], 
- "132": [
-  "alibi"
- ], 
- "133": [
-  "good food"
- ], 
- "134": [
-  "s4c", 
-  "s four c"
- ], 
- "135": [
-  "e4", 
-  "e four"
- ], 
- "136": [
-  "more4", 
-  "more four"
- ], 
- "137": [
-  "4seven", 
-  "four seven"
- ], 
- "138": [
-  "channel 4", 
-  "channel four"
- ], 
- "139": [
-  "4music", 
-  "four music"
- ], 
- "140": [
-  "tlc"
- ], 
- "141": [
-  "5 usa", 
-  "five usa"
- ], 
- "142": [
-  "really"
- ], 
- "143": [
-  "drama"
- ], 
- "144": [
-  "quest"
- ], 
- "145": [
-  "challenge"
- ], 
- "146": [
-  "cbs reality"
- ], 
- "147": [
-  "cbs drama"
- ], 
- "148": [
-  "cbs action"
- ], 
- "149": [
-  "quest red"
- ], 
- "150": [
-  "5spike", 
-  "five spike"
- ], 
- "151": [
-  "e!"
- ], 
- "152": [
-  "pick"
- ], 
- "153": [
-  "5select", 
-  "five select"
- ], 
- "154": [
-  "id"
- ], 
- "155": [
-  "yesterday"
- ], 
- "156": [
-  "crime+inv"
- ], 
- "157": [
-  "sony crime"
- ], 
- "158": [
-  "home"
- ], 
- "159": [
-  "together"
- ], 
- "160": [
-  "pbs america"
- ], 
- "161": [
-  "discovery turbo"
- ], 
- "162": [
-  "animal planet"
- ], 
- "163": [
-  "h2", 
-  "h two"
- ], 
- "164": [
-  "lifetime"
- ], 
- "165": [
-  "nat geo wild"
- ], 
- "166": [
-  "eden"
- ], 
- "167": [
-  "discovery science"
- ], 
- "168": [
-  "yourtv"
- ], 
- "169": [
-  "bbc alba"
- ], 
- "170": [
-  "real lives"
- ], 
- "171": [
-  "discovery history"
- ], 
- "172": [
-  "discovery shed"
- ], 
- "173": [
-  "bet:blackenttv"
- ], 
- "174": [
-  "vh1", 
-  "v h one"
- ], 
- "175": [
-  "ben"
- ], 
- "176": [
-  "itv"
- ], 
- "177": [
-  "home & health"
- ], 
- "178": [
-  "dmax"
- ], 
- "179": [
-  "true ent"
- ], 
- "180": [
-  "tru tv"
- ], 
- "181": [
-  "sony crime 2", 
-  "sony crime two"
- ], 
- "182": [
-  "gn tv"
- ], 
- "183": [
-  "viceland"
- ], 
- "184": [
-  "horse & country"
- ], 
- "185": [
-  "propeller"
- ], 
- "186": [
-  "amc from bt"
- ], 
- "187": [
-  "blaze"
- ], 
- "189": [
-  "property show"
- ], 
- "191": [
-  "mytv"
- ], 
- "192": [
-  "showcase"
- ], 
- "193": [
-  "vox africa"
- ], 
- "194": [
-  "ait international"
- ], 
- "195": [
-  "abn tv"
- ], 
- "197": [
-  "food network", 
-  "food ne2rk"
- ], 
- "198": [
-  "travel channel"
- ], 
- "199": [
-  "holiday plus cruise"
- ], 
- "301": [
-  "Sky Premiere HD"
- ], 
- "302": [
-  "Sky Hits HD"
- ], 
- "303": [
-  "Sky Superhero HD"
- ], 
- "304": [
-  "Sky Disney HD"
- ], 
- "305": [
-  "Sky Family HD"
- ], 
- "306": [
-  "Sky Action HD"
- ], 
- "307": [
-  "Sky Comedy HD"
- ], 
- "308": [
-  "Sky Thriller HD"
- ], 
- "309": [
-  "Sky Drama HD"
- ], 
- "310": [
-  "Sky Sci Fi Horror HD"
- ], 
- "311": [
-  "Sky Classics HD"
- ], 
- "312": [
-  "Sky Prem+1", 
-  "sky prem plus one", 
-  "sky premiere plus 1"
- ], 
- "313": [
-  "Film4 HD", 
-  "film four HD"
- ], 
- "314": [
-  "Film4+1", 
-  "film4 plus one", 
-  "film four plus 1"
- ], 
- "315": [
-  "TCM HD"
- ], 
- "316": [
-  "TCM+1", 
-  "tcm plus one"
- ], 
- "317": [
-  "horror channel"
- ], 
- "318": [
-  "horror ch+1", 
-  "horror channel plus one"
- ], 
- "319": [
-  "True Movies"
- ], 
- "320": [
-  "True Movies+1", 
-  "true movies plus one"
- ], 
- "321": [
-  "Sony Movies"
- ], 
- "322": [
-  "Sony Movies+1", 
-  "sony movies plus one"
- ], 
- "323": [
-  "movies4men", 
-  "movies for men"
- ], 
- "324": [
-  "mov4men+1", 
-  "movies for men plus one", 
-  "movfourmen plus 1"
- ], 
- "325": [
-  "Movies 24", 
-  "movies twenty four", 
-  "movies 2four"
- ], 
- "326": [
-  "Movies 24+", 
-  "movies twenty four plus ", 
-  "movies 2 four plus "
- ], 
- "327": [
-  "Nollywood"
- ], 
- "328": [
-  "TalkingPictures"
- ], 
- "329": [
-  "ROK"
- ], 
- "350": [
-  "MTV MUSIC"
- ], 
- "351": [
-  "MTV BASE"
- ], 
- "352": [
-  "MTV HITS"
- ], 
- "353": [
-  "MTV OMG"
- ], 
- "354": [
-  "MTV DANCE"
- ], 
- "355": [
-  "MTV ROCKS"
- ], 
- "356": [
-  "MTV CLASSIC"
- ], 
- "357": [
-  "MTV MUSIC+1", 
-  "mtv music plus one"
- ], 
- "358": [
-  "Box Upfront"
- ], 
- "359": [
-  "The Box"
- ], 
- "360": [
-  "Box Hits"
- ], 
- "361": [
-  "KISS"
- ], 
- "362": [
-  "Magic"
- ], 
- "363": [
-  "Kerrang!"
- ], 
- "364": [
-  "Chart Show TV"
- ], 
- "365": [
-  "The Vault"
- ], 
- "366": [
-  "Scuzz"
- ], 
- "367": [
-  "Vintage TV"
- ], 
- "368": [
-  "NOW 90s"
- ], 
- "369": [
-  "Starz TV"
- ], 
- "370": [
-  "Chartshow Hits"
- ], 
- "371": [
-  "NOW 80s"
- ], 
- "372": [
-  "Clubland TV"
- ], 
- "373": [
-  "Channel AKA"
- ], 
- "374": [
-  "Heart TV"
- ], 
- "375": [
-  "CAPITAL TV"
- ], 
- "376": [
-  "Keep It Country"
- ], 
- "401": [
-  "SkySpMainEv HD", 
-  "sky sportsmainev HD", 
-  "sky sports main event HD"
- ], 
- "402": [
-  "SkySp PL HD", 
-  "sky sports pl HD", 
-  "Sky Sports Premier League HD"
- ], 
- "403": [
-  "SkySp Football HD", 
-  "sky sports football HD", 
-  "sky sports football HD"
- ], 
- "404": [
-  "SkySpCricket HD", 
-  "sky sports cricket HD"
- ], 
- "405": [
-  "SkySp Golf HD", 
-  "sky sports golf HD"
- ], 
- "406": [
-  "SkySp F1 HD", 
-  "skysp f. one HD", 
-  "skysp fone HD", 
-  "sky sports f1 HD"
- ], 
- "407": [
-  "SkySp Action HD", 
-  "sky sports action HD"
- ], 
- "408": [
-  "SkySp Arena HD", 
-  "sky sports arena HD"
- ], 
- "409": [
-  "SkySp News HD", 
-  "sky sports news HD"
- ], 
- "410": [
-  "Eurosport 1 HD", 
-  "eurosport one HD"
- ], 
- "411": [
-  "Eurosport 2 HD", 
-  "eurosport two HD"
- ], 
- "412": [
-  "Premier HD"
- ], 
- "413": [
-  "BT Sport 1", 
-  "bt sport one"
- ], 
- "414": [
-  "BT Sport 2", 
-  "bt sport two"
- ], 
- "415": [
-  "At The Races"
- ], 
- "417": [
-  "BT Sport 3", 
-  "bt sport three"
- ], 
- "418": [
-  "MUTV HD"
- ], 
- "419": [
-  "Chelsea TV HD"
- ], 
- "422": [
-  "FreeSports"
- ], 
- "423": [
-  "BT Sport ESPN"
- ], 
- "425": [
-  "LFCTV HD"
- ], 
- "426": [
-  "Racing UK HD"
- ], 
- "427": [
-  "BoxNation"
- ], 
- "429": [
-  "Motorsport TV"
- ], 
- "431": [
-  "FrontRunner"
- ], 
- "433": [
-  "GINXeSportsTV"
- ], 
- "450": [
-  "Forces TV"
- ], 
- "451": [
-  "Insight HD"
- ], 
- "452": [
-  "FAME TV"
- ], 
- "453": [
-  "YANGA!"
- ], 
- "490": [
-  "BoxNation HD"
- ], 
- "491": [
-  "SkySpBoxOff", 
-  "sky sports box office"
- ], 
- "492": [
-  "SkySpBoxOffHD", 
-  "sky sports box office hd"
- ], 
- "493": [
-  "ITV Box Office HD"
- ], 
- "494": [
-  "BTSptBoxOffHD", 
-  "BT Sport Box Office hd"
- ], 
- "501": [
-  "Sky News HD"
- ], 
- "502": [
-  "Bloomberg HD"
- ], 
- "503": [
-  "BBC NEWS HD"
- ], 
- "504": [
-  "BBC Parliament"
- ], 
- "505": [
-  "CNBC"
- ], 
- "506": [
-  "CNN HD"
- ], 
- "507": [
-  "NHK World HD"
- ], 
- "508": [
-  "Euronews", 
-  "eur1ws"
- ], 
- "509": [
-  "CGTN"
- ], 
- "510": [
-  "NDTV 24x7", 
-  "ndtv twenty four seven", 
-  "ndtv 2fourx7"
- ], 
- "511": [
-  "RT HD"
- ], 
- "512": [
-  "FRANCE Eng"
- ], 
- "513": [
-  "Al Jazeera HD"
- ], 
- "514": [
-  "CNC World"
- ], 
- "515": [
-  "TVC News"
- ], 
- "516": [
-  "TRT World HD"
- ], 
- "518": [
-  "Channels 24", 
-  "channels twenty four", 
-  "channels 2four"
- ], 
- "519": [
-  "Times Now"
- ], 
- "520": [
-  "News18", 
-  "news eighteen"
- ], 
- "522": [
-  "Arirang TV HD"
- ], 
- "560": [
-  "Psychic Today"
- ], 
- "561": [
-  "Sky Insider HD"
- ], 
- "580": [
-  "GOD Channel"
- ], 
- "581": [
-  "revelation"
- ], 
- "582": [
-  "TBN UK"
- ], 
- "583": [
-  "DAYSTAR HD"
- ], 
- "584": [
-  "Inspiration TV"
- ], 
- "585": [
-  "LOVEWORLD TV"
- ], 
- "586": [
-  "Gospel Channel"
- ], 
- "587": [
-  "Word Network", 
-  "word ne2rk"
- ], 
- "588": [
-  "EWTN Catholic"
- ], 
- "589": [
-  "Faith World TV"
- ], 
- "590": [
-  "KICC TV"
- ], 
- "591": [
-  "Believe TV"
- ], 
- "592": [
-  "Olive TV"
- ], 
- "593": [
-  "SonLife"
- ], 
- "594": [
-  "Faith UK"
- ], 
- "595": [
-  "Hillsong"
- ], 
- "601": [
-  "Cartoon Network HD"
- ], 
- "602": [
-  "CN+1", 
-  "cn plus one"
- ], 
- "603": [
-  "Boomerang HD"
- ], 
- "604": [
-  "Nickelodeon HD"
- ], 
- "605": [
-  "Nickelodeon+1", 
-  "nickelodeon plus one"
- ], 
- "606": [
-  "Nicktoons"
- ], 
- "607": [
-  "Disney Junior HD"
- ], 
- "608": [
-  "Disney Junior+"
- ], 
- "609": [
-  "Disney Channel HD"
- ], 
- "610": [
-  "Disney Chnl+1", 
-  "disney channel plus one"
- ], 
- "611": [
-  "Disney XD HD"
- ], 
- "612": [
-  "Disney XD+1", 
-  "disney x d plus one"
- ], 
- "613": [
-  "CBBC HD"
- ], 
- "614": [
-  "CBeebies HD"
- ], 
- "615": [
-  "Nick Junior HD"
- ], 
- "616": [
-  "POP"
- ], 
- "617": [
-  "Tiny Pop"
- ], 
- "618": [
-  "Boomerang+1", 
-  "boomerang plus one"
- ], 
- "619": [
-  "Cartoonito"
- ], 
- "620": [
-  "Nick Jr Too"
- ], 
- "621": [
-  "CITV"
- ], 
- "622": [
-  "BabyTV"
- ], 
- "625": [
-  "POP+1", 
-  "pop plus one"
- ], 
- "626": [
-  "POP Max"
- ], 
- "627": [
-  "POP Max+1", 
-  "pop max plus one"
- ], 
- "628": [
-  "Nick Jr+1", 
-  "nick junior plus one"
- ], 
- "640": [
-  "Cartoon Network"
- ], 
- "641": [
-  "Boomerang"
- ], 
- "642": [
-  "Nickelodeon"
- ], 
- "643": [
-  "Disney Junior"
- ], 
- "644": [
-  "Disney Channel"
- ], 
- "645": [
-  "Disney XD"
- ], 
- "646": [
-  "CBBC"
- ], 
- "647": [
-  "CBeebies"
- ], 
- "648": [
-  "Nick Junior"
- ], 
- "660": [
-  "QVC"
- ], 
- "661": [
-  "JML Direct"
- ], 
- "662": [
-  "TJC"
- ], 
- "663": [
-  "QVC Style"
- ], 
- "664": [
-  "Ideal World"
- ], 
- "665": [
-  "Gems TV"
- ], 
- "666": [
-  "High Street TV 1", 
-  "high street tv one"
- ], 
- "667": [
-  "Retail TV"
- ], 
- "668": [
-  "High Street TV 2", 
-  "high street tv two"
- ], 
- "669": [
-  "Best Direct"
- ], 
- "670": [
-  "TJC Choice"
- ], 
- "671": [
-  "Ideal Extra"
- ], 
- "672": [
-  "High Street TV 3", 
-  "high street tv three"
- ], 
- "673": [
-  "Hochanda"
- ], 
- "674": [
-  "Jewelry Maker"
- ], 
- "675": [
-  "High Street TV 4", 
-  "high street tv four"
- ], 
- "676": [
-  "TV Warehouse"
- ], 
- "677": [
-  "QVC Beauty"
- ], 
- "678": [
-  "PaversShoes.tv"
- ], 
- "679": [
-  "Thane"
- ], 
- "680": [
-  "V Channel"
- ], 
- "681": [
-  "Rocks & Co"
- ], 
- "682": [
-  "QVC Extra"
- ], 
- "683": [
-  "Create & Craft"
- ], 
- "684": [
-  "Craft Extra"
- ], 
- "685": [
-  "Shop Now"
- ], 
- "686": [
-  "Price Crash"
- ], 
- "687": [
-  "Sewing Quarter"
- ], 
- "688": [
-  "Cruise1st.tv", 
-  "cruise first dot tv"
- ], 
- "701": [
-  "B4U Movies", 
-  "b for u movies"
- ], 
- "702": [
-  "B4U Music", 
-  "b for u music"
- ], 
- "703": [
-  "SONY TV HD"
- ], 
- "704": [
-  "Star Bharat"
- ], 
- "705": [
-  "Star Plus HD"
- ], 
- "706": [
-  "PCNE Chinese"
- ], 
- "707": [
-  "COLORS HD"
- ], 
- "708": [
-  "mta-muslim tv"
- ], 
- "709": [
-  "Zee TV HD"
- ], 
- "710": [
-  "Zing"
- ], 
- "711": [
-  "Zee Cinema"
- ], 
- "712": [
-  "JUS Punjabi"
- ], 
- "713": [
-  "PTV Prime"
- ], 
- "714": [
-  "MATV National"
- ], 
- "715": [
-  "Abu Dhabi TV"
- ], 
- "716": [
-  "&TV", 
-  "and tv"
- ], 
- "717": [
-  "TV5 MONDE", 
-  "tv five monde"
- ], 
- "718": [
-  "RishteyCine"
- ], 
- "719": [
-  "SONY MAX HD"
- ], 
- "720": [
-  "HUM Masala"
- ], 
- "721": [
-  "Hidayat TV"
- ], 
- "722": [
-  "Record TV HD"
- ], 
- "723": [
-  "GEO News"
- ], 
- "724": [
-  "PTV Global"
- ], 
- "725": [
-  "New Vision TV"
- ], 
- "726": [
-  "Venus TV"
- ], 
- "727": [
-  "Islam Channel"
- ], 
- "728": [
-  "GEO TV"
- ], 
- "729": [
-  "Star GOLD HD"
- ], 
- "730": [
-  "SONY SAB"
- ], 
- "731": [
-  "ABP News"
- ], 
- "732": [
-  "Noor TV"
- ], 
- "733": [
-  "Peace TV"
- ], 
- "734": [
-  "CHSTV"
- ], 
- "735": [
-  "PTC PUNJABI"
- ], 
- "736": [
-  "SONY MIX"
- ], 
- "737": [
-  "GEO Kahani"
- ], 
- "738": [
-  "AAJ TAK"
- ], 
- "739": [
-  "IQRA TV"
- ], 
- "740": [
-  "92 News", 
-  "ninety two news"
- ], 
- "741": [
-  "Rishtey"
- ], 
- "743": [
-  "Brit Asia TV"
- ], 
- "744": [
-  "IQRA BANGLA"
- ], 
- "745": [
-  "Ahlebait TV"
- ], 
- "746": [
-  "ATN Bangla UK"
- ], 
- "747": [
-  "Madani Chnl"
- ], 
- "748": [
-  "Sikh Channel"
- ], 
- "749": [
-  "Peace TV Urdu"
- ], 
- "750": [
-  "Ahlulbayt TV"
- ], 
- "751": [
-  "Samaa"
- ], 
- "752": [
-  "Channel i"
- ], 
- "753": [
-  "Takbeer TV"
- ], 
- "754": [
-  "Living Foodz"
- ], 
- "755": [
-  "Sangat"
- ], 
- "756": [
-  "Aastha"
- ], 
- "757": [
-  "NTV"
- ], 
- "758": [
-  "SkyNews Arabia"
- ], 
- "759": [
-  "TV 99"
- ], 
- "760": [
-  "Akaal Channel"
- ], 
- "761": [
-  "HUM EUROPE"
- ], 
- "762": [
-  "British Muslim"
- ], 
- "763": [
-  "Safeer TV"
- ], 
- "764": [
-  "TV One", 
-  "tv 1"
- ], 
- "765": [
-  "Dunya News"
- ], 
- "766": [
-  "Islam Ch Urdu"
- ], 
- "767": [
-  "Channel 44", 
-  "channel forty four"
- ], 
- "769": [
-  "Eman Channel"
- ], 
- "770": [
-  "KTV"
- ], 
- "771": [
-  "Aplus TV"
- ], 
- "772": [
-  "Urdu1 Europe", 
-  "urdu one europe"
- ], 
- "773": [
-  "iON TV"
- ], 
- "774": [
-  "ARY Family"
- ], 
- "775": [
-  "Kanshi TV"
- ], 
- "776": [
-  "MTV Beats"
- ], 
- "777": [
-  "VTV"
- ], 
- "778": [
-  "Sanskar"
- ], 
- "779": [
-  "A1TV", 
-  "aonetv"
- ], 
- "780": [
-  "Iran International HD"
- ]
+101:[u'bbc one', u'bbc 1'],
+102:[u'bbc two', u'bbc 2'],
+103:[u'itv'],
+104:[u'channel 4', u'channel four'],
+105:[u'channel 5', u'channel five'],
+106:[u'sky one', u'sky 1'],
+107:[u'sky living'],
+108:[u'sky atlantic'],
+109:[u'w'],
+110:[u'gold'],
+111:[u'dave'],
+112:[u'comedy central'],
+113:[u'universal'],
+114:[u'syfy', u'sci-fi'],
+115:[u'bbc one', u'bbc 1'],
+116:[u'bbc four', u'bbc 4'],
+117:[u'london live'],
+118:[u'itv2', u'itv two'],
+119:[u'itv3', u'itv three'],
+120:[u'itv4', u'itv four'],
+121:[u'skysp mix', u'sky sports mix'],
+122:[u'sky arts'],
+123:[u'sky two', u'sky 2'],
+124:[u'fox'],
+125:[u'discovery'],
+126:[u'mtv'],
+127:[u'comedyxtra'],
+128:[u'5star', u'five star'],
+129:[u'nat geo'],
+130:[u'history'],
+131:[u'itvbe'],
+132:[u'alibi'],
+133:[u'good food'],
+134:[u's4c', u's four c'],
+135:[u'e4', u'e four'],
+136:[u'more4', u'more four'],
+137:[u'4seven', u'four seven'],
+138:[u'channel 4', u'channel four'],
+139:[u'4music', u'four music'],
+140:[u'tlc'],
+141:[u'5 usa', u'five usa'],
+142:[u'really'],
+143:[u'drama'],
+144:[u'quest'],
+145:[u'challenge'],
+146:[u'cbs reality'],
+147:[u'cbs drama'],
+148:[u'cbs action'],
+149:[u'quest red'],
+150:[u'5spike', u'five spike'],
+151:[u'e!'],
+152:[u'pick'],
+153:[u'5select', u'five select'],
+154:[u'id'],
+155:[u'yesterday'],
+156:[u'crime+inv'],
+157:[u'sony crime'],
+158:[u'home'],
+159:[u'together'],
+160:[u'pbs america'],
+161:[u'discovery turbo'],
+162:[u'animal planet'],
+163:[u'h2', u'h two'],
+164:[u'lifetime'],
+165:[u'nat geo wild'],
+166:[u'eden'],
+167:[u'discovery science'],
+168:[u'yourtv'],
+169:[u'bbc alba'],
+170:[u'real lives'],
+171:[u'discovery history'],
+172:[u'discovery shed'],
+173:[u'bet:blackenttv'],
+174:[u'vh1', u'v h one'],
+175:[u'ben'],
+176:[u'itv'],
+177:[u'home & health'],
+178:[u'dmax'],
+179:[u'true ent'],
+180:[u'tru tv'],
+181:[u'sony crime 2', u'sony crime two'],
+182:[u'gn tv'],
+183:[u'viceland'],
+184:[u'horse & country'],
+185:[u'propeller'],
+186:[u'amc from bt'],
+187:[u'blaze'],
+189:[u'property show'],
+191:[u'mytv'],
+192:[u'showcase'],
+193:[u'vox africa'],
+194:[u'ait international'],
+195:[u'abn tv'],
+197:[u'food network', u'food ne2rk'],
+198:[u'travel channel'],
+199:[u'holiday plus cruise'],
+301:[u'Sky Premiere HD'],
+302:[u'Sky Hits HD'],
+303:[u'Sky Superhero HD'],
+304:[u'Sky Disney HD'],
+305:[u'Sky Family HD'],
+306:[u'Sky Action HD'],
+307:[u'Sky Comedy HD'],
+308:[u'Sky Thriller HD'],
+309:[u'Sky Drama HD'],
+310:[u'Sky Sci Fi Horror HD'],
+311:[u'Sky Classics HD'],
+312:[u'Sky Prem+1', u'sky prem plus one', u'sky premiere plus 1'],
+313:[u'Film4 HD', u'film four HD'],
+314:[u'Film4+1', u'film4 plus one', u'film four plus 1'],
+315:[u'TCM HD'],
+316:[u'TCM+1', u'tcm plus one'],
+317:[u'horror channel'],
+318:[u'horror ch+1', u'horror channel plus one'],
+319:[u'True Movies'],
+320:[u'True Movies+1', u'true movies plus one'],
+321:[u'Sony Movies'],
+322:[u'Sony Movies+1', u'sony movies plus one'],
+323:[u'movies4men', u'movies for men'],
+324:[u'mov4men+1', u'movies for men plus one', u'movfourmen plus 1'],
+325:[u'Movies 24', u'movies twenty four', u'movies 2four'],
+326:[u'Movies 24+', u'movies twenty four plus ', u'movies 2 four plus '],
+327:[u'Nollywood'],
+328:[u'TalkingPictures'],
+329:[u'ROK'],
+350:[u'MTV MUSIC'],
+351:[u'MTV BASE'],
+352:[u'MTV HITS'],
+353:[u'MTV OMG'],
+354:[u'MTV DANCE'],
+355:[u'MTV ROCKS'],
+356:[u'MTV CLASSIC'],
+357:[u'MTV MUSIC+1', u'mtv music plus one'],
+358:[u'Box Upfront'],
+359:[u'The Box'],
+360:[u'Box Hits'],
+361:[u'KISS'],
+362:[u'Magic'],
+363:[u'Kerrang!'],
+364:[u'Chart Show TV'],
+365:[u'The Vault'],
+366:[u'Scuzz'],
+367:[u'Vintage TV'],
+368:[u'NOW 90s'],
+369:[u'Starz TV'],
+370:[u'Chartshow Hits'],
+371:[u'NOW 80s'],
+372:[u'Clubland TV'],
+373:[u'Channel AKA'],
+374:[u'Heart TV'],
+375:[u'CAPITAL TV'],
+376:[u'Keep It Country'],
+401:[u'SkySpMainEv HD', u'sky sportsmainev HD', u'sky sports main event HD'],
+402:[u'SkySp PL HD', u'sky sports pl HD', u'Sky Sports Premier League HD'],
+403:[u'SkySp Football HD', u'sky sports football HD', u'sky sports football HD'],
+404:[u'SkySpCricket HD', u'sky sports cricket HD'],
+405:[u'SkySp Golf HD', u'sky sports golf HD'],
+406:[u'SkySp F1 HD', u'skysp f. one HD', u'skysp fone HD', u'sky sports f1 HD'],
+407:[u'SkySp Action HD', u'sky sports action HD'],
+408:[u'SkySp Arena HD', u'sky sports arena HD'],
+409:[u'SkySp News HD', u'sky sports news HD'],
+410:[u'Eurosport 1 HD', u'eurosport one HD'],
+411:[u'Eurosport 2 HD', u'eurosport two HD'],
+412:[u'Premier HD'],
+413:[u'BT Sport 1', u'bt sport one'],
+414:[u'BT Sport 2', u'bt sport two'],
+415:[u'At The Races'],
+417:[u'BT Sport 3', u'bt sport three'],
+418:[u'MUTV HD'],
+419:[u'Chelsea TV HD'],
+422:[u'FreeSports'],
+423:[u'BT Sport ESPN'],
+425:[u'LFCTV HD'],
+426:[u'Racing UK HD'],
+427:[u'BoxNation'],
+429:[u'Motorsport TV'],
+431:[u'FrontRunner'],
+433:[u'GINXeSportsTV'],
+450:[u'Forces TV'],
+451:[u'Insight HD'],
+452:[u'FAME TV'],
+453:[u'YANGA!'],
+490:[u'BoxNation HD'],
+491:[u'SkySpBoxOff', u'sky sports box office'],
+492:[u'SkySpBoxOffHD', u'sky sports box office hd'],
+493:[u'ITV Box Office HD'],
+494:[u'BTSptBoxOffHD', u'BT Sport Box Office hd'],
+501:[u'Sky News HD'],
+502:[u'Bloomberg HD'],
+503:[u'BBC NEWS HD'],
+504:[u'BBC Parliament'],
+505:[u'CNBC'],
+506:[u'CNN HD'],
+507:[u'NHK World HD'],
+508:[u'Euronews', u'eur1ws'],
+509:[u'CGTN'],
+510:[u'NDTV 24x7', u'ndtv twenty four seven', u'ndtv 2fourx7'],
+511:[u'RT HD'],
+512:[u'FRANCE Eng'],
+513:[u'Al Jazeera HD'],
+514:[u'CNC World'],
+515:[u'TVC News'],
+516:[u'TRT World HD'],
+518:[u'Channels 24', u'channels twenty four', u'channels 2four'],
+519:[u'Times Now'],
+520:[u'News18', u'news eighteen'],
+522:[u'Arirang TV HD'],
+560:[u'Psychic Today'],
+561:[u'Sky Insider HD'],
+580:[u'GOD Channel'],
+581:[u'revelation'],
+582:[u'TBN UK'],
+583:[u'DAYSTAR HD'],
+584:[u'Inspiration TV'],
+585:[u'LOVEWORLD TV'],
+586:[u'Gospel Channel'],
+587:[u'Word Network', u'word ne2rk'],
+588:[u'EWTN Catholic'],
+589:[u'Faith World TV'],
+590:[u'KICC TV'],
+591:[u'Believe TV'],
+592:[u'Olive TV'],
+593:[u'SonLife'],
+594:[u'Faith UK'],
+595:[u'Hillsong'],
+601:[u'Cartoon Network HD'],
+602:[u'CN+1', u'cn plus one'],
+603:[u'Boomerang HD'],
+604:[u'Nickelodeon HD'],
+605:[u'Nickelodeon+1', u'nickelodeon plus one'],
+606:[u'Nicktoons'],
+607:[u'Disney Junior HD'],
+608:[u'Disney Junior+'],
+609:[u'Disney Channel HD'],
+610:[u'Disney Chnl+1', u'disney channel plus one'],
+611:[u'Disney XD HD'],
+612:[u'Disney XD+1', u'disney x d plus one'],
+613:[u'CBBC HD'],
+614:[u'CBeebies HD'],
+615:[u'Nick Junior HD'],
+616:[u'POP'],
+617:[u'Tiny Pop'],
+618:[u'Boomerang+1', u'boomerang plus one'],
+619:[u'Cartoonito'],
+620:[u'Nick Jr Too'],
+621:[u'CITV'],
+622:[u'BabyTV'],
+625:[u'POP+1', u'pop plus one'],
+626:[u'POP Max'],
+627:[u'POP Max+1', u'pop max plus one'],
+628:[u'Nick Jr+1', u'nick junior plus one'],
+640:[u'Cartoon Network'],
+641:[u'Boomerang'],
+642:[u'Nickelodeon'],
+643:[u'Disney Junior'],
+644:[u'Disney Channel'],
+645:[u'Disney XD'],
+646:[u'CBBC'],
+647:[u'CBeebies'],
+648:[u'Nick Junior'],
+660:[u'QVC'],
+661:[u'JML Direct'],
+662:[u'TJC'],
+663:[u'QVC Style'],
+664:[u'Ideal World'],
+665:[u'Gems TV'],
+666:[u'High Street TV 1', u'high street tv one'],
+667:[u'Retail TV'],
+668:[u'High Street TV 2', u'high street tv two'],
+669:[u'Best Direct'],
+670:[u'TJC Choice'],
+671:[u'Ideal Extra'],
+672:[u'High Street TV 3', u'high street tv three'],
+673:[u'Hochanda'],
+674:[u'Jewelry Maker'],
+675:[u'High Street TV 4', u'high street tv four'],
+676:[u'TV Warehouse'],
+677:[u'QVC Beauty'],
+678:[u'PaversShoes.tv'],
+679:[u'Thane'],
+680:[u'V Channel'],
+681:[u'Rocks & Co'],
+682:[u'QVC Extra'],
+683:[u'Create & Craft'],
+684:[u'Craft Extra'],
+685:[u'Shop Now'],
+686:[u'Price Crash'],
+687:[u'Sewing Quarter'],
+688:[u'Cruise1st.tv', u'cruise first dot tv'],
+701:[u'B4U Movies', u'b for u movies'],
+702:[u'B4U Music', u'b for u music'],
+703:[u'SONY TV HD'],
+704:[u'Star Bharat'],
+705:[u'Star Plus HD'],
+706:[u'PCNE Chinese'],
+707:[u'COLORS HD'],
+708:[u'mta-muslim tv'],
+709:[u'Zee TV HD'],
+710:[u'Zing'],
+711:[u'Zee Cinema'],
+712:[u'JUS Punjabi'],
+713:[u'PTV Prime'],
+714:[u'MATV National'],
+715:[u'Abu Dhabi TV'],
+716:[u'&TV', u'and tv'],
+717:[u'TV5 MONDE', u'tv five monde'],
+718:[u'RishteyCine'],
+719:[u'SONY MAX HD'],
+720:[u'HUM Masala'],
+721:[u'Hidayat TV'],
+722:[u'Record TV HD'],
+723:[u'GEO News'],
+724:[u'PTV Global'],
+725:[u'New Vision TV'],
+726:[u'Venus TV'],
+727:[u'Islam Channel'],
+728:[u'GEO TV'],
+729:[u'Star GOLD HD'],
+730:[u'SONY SAB'],
+731:[u'ABP News'],
+732:[u'Noor TV'],
+733:[u'Peace TV'],
+734:[u'CHSTV'],
+735:[u'PTC PUNJABI'],
+736:[u'SONY MIX'],
+737:[u'GEO Kahani'],
+738:[u'AAJ TAK'],
+739:[u'IQRA TV'],
+740:[u'92 News', u'ninety two news'],
+741:[u'Rishtey'],
+743:[u'Brit Asia TV'],
+744:[u'IQRA BANGLA'],
+745:[u'Ahlebait TV'],
+746:[u'ATN Bangla UK'],
+747:[u'Madani Chnl'],
+748:[u'Sikh Channel'],
+749:[u'Peace TV Urdu'],
+750:[u'Ahlulbayt TV'],
+751:[u'Samaa'],
+752:[u'Channel i'],
+753:[u'Takbeer TV'],
+754:[u'Living Foodz'],
+755:[u'Sangat'],
+756:[u'Aastha'],
+757:[u'NTV'],
+758:[u'SkyNews Arabia'],
+759:[u'TV 99'],
+760:[u'Akaal Channel'],
+761:[u'HUM EUROPE'],
+762:[u'British Muslim'],
+763:[u'Safeer TV'],
+764:[u'TV One', u'tv 1'],
+765:[u'Dunya News'],
+766:[u'Islam Ch Urdu'],
+767:[u'Channel 44', u'channel forty four'],
+769:[u'Eman Channel'],
+770:[u'KTV'],
+771:[u'Aplus TV'],
+772:[u'Urdu1 Europe', u'urdu one europe'],
+773:[u'iON TV'],
+774:[u'ARY Family'],
+775:[u'Kanshi TV'],
+776:[u'MTV Beats'],
+777:[u'VTV'],
+778:[u'Sanskar'],
+779:[u'A1TV', u'aonetv'],
+780:[u'Iran International HD']
 }
