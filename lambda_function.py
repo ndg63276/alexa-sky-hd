@@ -272,6 +272,7 @@ def handle_non_discovery(request):
             commands.append('sky')
             value = "ON"
         else:
+            commands.append('sky')
             commands.append('power')
             value = "OFF"
         properties = [ {
