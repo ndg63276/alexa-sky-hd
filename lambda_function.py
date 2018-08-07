@@ -169,7 +169,7 @@ def get_uuid():
     return str(uuid.uuid4())
     
 def get_channels():   
-    if 'HD' in environ and environ['HD'] == True:
+    if 'HD' in environ and environ['HD'] == 'True':
         url = 'https://raw.githubusercontent.com/ndg63276/alexa-sky-hd/master/channels-hd.json'
     else:
         url = 'https://raw.githubusercontent.com/ndg63276/alexa-sky-hd/master/channels-sd.json'
