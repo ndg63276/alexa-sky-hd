@@ -12,6 +12,8 @@
 
 3rd May 2018: Sky have renumbered lots of channels. Most should just work, but anything in the range 200-299 (plus one channels) will be broken, until you re-download Alexa-Skybox.zip and re-upload it to Lambda.
 
+7th August 2018: Sky have renamed some channels, notably Living has become Witness. I have updated the HD list, and fixed a bug that meant you could never be a HD customer.
+
 ### Known issues
 For various reasons, changing to the following channels seems to struggle:
 ITV3, Sky Sports Mix, Sky One+1, ITV1+1
