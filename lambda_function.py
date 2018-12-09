@@ -345,12 +345,7 @@ def handle_non_discovery(request):
         if endpointId == "skybox-tvguide":
             if request_name == "Activate":
                 commands.append('tvguide')
-                commands.append('right')
-                commands.append('down')
-                commands.append('down')
-                commands.append('down')
-                commands.append('down')
-                commands.append('down')
+                commands.append('select')
                 commands.append('select')
                 name = "ActivationStarted"
             if request_name == "Deactivate":
@@ -359,7 +354,12 @@ def handle_non_discovery(request):
 	elif endpointId == "skyq-netflix":
             if request_name == "Activate":
                 commands.append('tvguide')
-                commands.append('select')
+                commands.append('right')
+                commands.append('down')
+                commands.append('down')
+                commands.append('down')
+                commands.append('down')
+                commands.append('down')
                 commands.append('select')
                 name = "ActivationStarted"
             if request_name == "Deactivate":
