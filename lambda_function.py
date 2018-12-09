@@ -99,7 +99,21 @@ appliances = [
             ],
         "cookie": {}
     },
-        {
+    {
+        "applianceId": "skyq-netflix",
+        "manufacturerName": "Sky",
+        "version": "1",
+        "friendlyName": "Netflix",
+        "description": "Netflix scene via Sky Q",
+        "isReachable": True,
+        "displayCategories":["SCENE_TRIGGER"],
+        "actions": [
+            "turnOn",
+            "turnOff"
+            ],
+        "cookie": {}
+    },
+    {
         "applianceId": "skybox-subtitles",
         "manufacturerName": "Sky",
         "version": "1",
@@ -329,6 +343,20 @@ def handle_non_discovery(request):
         endpointId = request['directive']['endpoint']['endpointId']
         namespace = request["directive"]["header"]["namespace"]
         if endpointId == "skybox-tvguide":
+            if request_name == "Activate":
+                commands.append('tvguide')
+                commands.append('right')
+                commands.append('down')
+                commands.append('down')
+                commands.append('down')
+                commands.append('down')
+                commands.append('down')
+                commands.append('select')
+                name = "ActivationStarted"
+            if request_name == "Deactivate":
+                commands.append('sky')
+                name = "DeactivationStarted"
+	elif endpointId == "skyq-netflix":
             if request_name == "Activate":
                 commands.append('tvguide')
                 commands.append('select')
