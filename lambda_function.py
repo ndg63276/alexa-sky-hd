@@ -354,7 +354,7 @@ def handle_non_discovery(request):
 	elif endpointId == "skyq-netflix":
             if request_name == "Activate":
                 commands.append('tvguide')
-		commands.append('pause')
+                commands.append('sleep')
                 commands.append('right')
                 commands.append('down')
                 commands.append('down')
@@ -424,7 +424,7 @@ def make_response(request, properties, namespace, name):
     return response
 
 def send_command(command):
-    if command == 'pause':
+    if command == 'sleep':
         time.sleep(1)
         return
     code=commands[command]
