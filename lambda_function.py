@@ -361,6 +361,7 @@ def handle_non_discovery(request):
                 commands.append('down')
                 commands.append('down')
                 commands.append('down')
+                commands.append('sleep')
                 commands.append('select')
                 name = "ActivationStarted"
             if request_name == "Deactivate":
