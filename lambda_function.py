@@ -114,6 +114,34 @@ appliances = [
         "cookie": {}
     },
     {
+        "applianceId": "skyq-youtube",
+        "manufacturerName": "Sky",
+        "version": "1",
+        "friendlyName": "YouTube",
+        "description": "YouTube scene via Sky Q",
+        "isReachable": True,
+        "displayCategories":["SCENE_TRIGGER"],
+        "actions": [
+            "turnOn",
+            "turnOff"
+            ],
+        "cookie": {}
+    },
+    {
+        "applianceId": "skyq-spotify",
+        "manufacturerName": "Sky",
+        "version": "1",
+        "friendlyName": "Spotify",
+        "description": "Spotify scene via Sky Q",
+        "isReachable": True,
+        "displayCategories":["SCENE_TRIGGER"],
+        "actions": [
+            "turnOn",
+            "turnOff"
+            ],
+        "cookie": {}
+    },
+    {
         "applianceId": "skybox-subtitles",
         "manufacturerName": "Sky",
         "version": "1",
@@ -353,16 +381,21 @@ def handle_non_discovery(request):
                 name = "DeactivationStarted"
 	elif endpointId == "skyq-netflix":
             if request_name == "Activate":
-                commands.append('tvguide')
-                commands.append('sleep')
-                commands.append('right')
-                commands.append('down')
-                commands.append('down')
-                commands.append('down')
-                commands.append('down')
-                commands.append('down')
-                commands.append('sleep')
-                commands.append('select')
+                commands=['tvguide','sleep','right','down','down','down','down','down','select']
+                name = "ActivationStarted"
+            if request_name == "Deactivate":
+                commands.append('sky')
+                name = "DeactivationStarted"
+        elif endpointId == "skyq-spotify":
+            if request_name == "Activate":
+                commands=['tvguide','sleep','right','down','down','down','down','down','right','select']
+                name = "ActivationStarted"
+            if request_name == "Deactivate":
+                commands.append('sky')
+                name = "DeactivationStarted"
+        elif endpointId == "skyq-youtube":
+            if request_name == "Activate":
+                commands=['tvguide','sleep','right','down','down','down','down','down','right','right','select']
                 name = "ActivationStarted"
             if request_name == "Deactivate":
                 commands.append('sky')
