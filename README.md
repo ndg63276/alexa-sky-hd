@@ -1,5 +1,5 @@
 # Alexa-Skybox
-**Unofficial Sky HD digibox skill for Alexa**
+**Unofficial Sky HD or Sky Q box skill for Alexa**
 ## Skill commands
 1. Power on/off: "Alexa, turn on Sky box"
 2. Change channel: "Alexa, change channel to BBC One (on Sky box)"
@@ -7,6 +7,11 @@
 4. TV Guide: "Alexa, turn on TV Guide"
 5. Subtitles / Audio description: "Alexa, turn on subtitles/audio description"
 6. Info: "Alexa, turn on info"
+## Sky Q commands
+This skill seems to work with a Sky Q box, though I don't have one to test with myself. I have added a few extra scenes for some Sky Q features.
+1. "Alexa, turn on Netflix"
+2. "Alexa, turn on Spotify"
+3. "Alexa, turn on YouTube"
 ### Updates
 7th April 2018: Sky seem to have removed the json page listing all their channels, so channel changing is broken. I have made my own version, but you will need to re-download Alexa-Skybox.zip and re-upload it to Lambda.
 
@@ -14,6 +19,7 @@
 
 7th August 2018: Sky have renamed some channels, notably Living has become Witness. I have updated the HD list, and fixed a bug that meant you could never be a HD customer.
 
+13th December 2018: With help from rosstilley, I've added some Sky Q scenes.
 ### Known issues
 For various reasons, changing to the following channels seems to struggle:
 ITV3, Sky Sports Mix, Sky One+1, ITV1+1
