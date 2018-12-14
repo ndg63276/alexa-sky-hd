@@ -20,9 +20,9 @@ import ast
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 try:
-	sky_box_name = environ['SKY_BOX_NAME']
+    sky_box_name = environ['SKY_BOX_NAME']
 except:
-	sky_box_name = 'Sky Box'
+    sky_box_name = 'Sky Box'
 
 commands = {
         "power": 0,
@@ -379,7 +379,7 @@ def handle_non_discovery(request):
             if request_name == "Deactivate":
                 commands.append('sky')
                 name = "DeactivationStarted"
-	elif endpointId == "skyq-netflix":
+        elif endpointId == "skyq-netflix":
             if request_name == "Activate":
                 commands=['tvguide','sleep','right','down','down','down','down','down','select']
                 name = "ActivationStarted"
