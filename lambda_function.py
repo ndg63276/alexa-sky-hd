@@ -15,7 +15,6 @@ import socket
 from os import environ
 from botocore.vendored import requests
 from fuzzywuzzy import fuzz
-import ast
 # Setup logger
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -216,7 +215,7 @@ def get_channels():
     else:
         url = 'https://raw.githubusercontent.com/ndg63276/alexa-sky-hd/master/channels-sd.json'
     r=requests.get(url)
-    channels = ast.literal_eval(r.text)
+    channels = r.json()
     return channels
 
 
