@@ -20,6 +20,8 @@ This skill seems to work with a Sky Q box, though I don't have one to test with 
 7th August 2018: Sky have renamed some channels, notably Living has become Witness. I have updated the HD list, and fixed a bug that meant you could never be a HD customer.
 
 13th December 2018: With help from rosstilley, I've added some Sky Q scenes.
+
+12th August 2019: Thanks to @pingloss, the Sky json page with their channel listing is back, so any changes to channel numbers should be automatic.
 ### Known issues
 For various reasons, changing to the following channels seems to struggle:
 ITV3, Sky Sports Mix, Sky One+1, ITV1+1
