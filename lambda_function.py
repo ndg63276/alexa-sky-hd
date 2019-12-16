@@ -209,18 +209,19 @@ def get_utc_timestamp(seconds=None):
 def get_uuid():
     return str(uuid.uuid4())
 
-"""
-def get_channels():   
-    if 'HD' in environ and environ['HD'] == 'True':
-        url = 'https://raw.githubusercontent.com/ndg63276/alexa-sky-hd/master/channels-hd.json'
+def get_channels():
+    if 'Italia' in environ:
+        return get_channels_it()
     else:
-        url = 'https://raw.githubusercontent.com/ndg63276/alexa-sky-hd/master/channels-sd.json'
+        return get_channels_en()
+
+def get_channels_it():
+    url = 'https://raw.githubusercontent.com/ndg63276/alexa-sky-hd/master/channels-it.json'
     r=requests.get(url)
     channels = r.json()
     return channels
-"""
 
-def get_channels():
+def get_channels_en():
     url = 'http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/1/'
     a = requests.get(url)
     chan_list = a.json()['init']['channels']

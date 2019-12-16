@@ -22,6 +22,9 @@ This skill seems to work with a Sky Q box, though I don't have one to test with 
 13th December 2018: With help from rosstilley, I've added some Sky Q scenes.
 
 12th August 2019: Thanks to @pingloss, the Sky json page with their channel listing is back, so any changes to channel numbers should be automatic.
+
+16th December 2019: Thanks to @AndreaC3p0, I have added Sky Italia channels. You need to add an environment variable called "Italia", set the value to 1.
+
 ### Known issues
 For various reasons, changing to the following channels seems to struggle:
 ITV3, Sky Sports Mix, Sky One+1, ITV1+1
