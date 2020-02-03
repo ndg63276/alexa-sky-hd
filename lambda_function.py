@@ -303,6 +303,7 @@ def handle_discovery(request):
 def handle_non_discovery(request):
     request_namespace = request["directive"]["header"]["namespace"]
     request_name = request["directive"]["header"]["name"]
+    endpointId = request['directive']['endpoint']['endpointId']
     namespace = "Alexa"
     name = "Response"
     commands = []
@@ -368,7 +369,6 @@ def handle_non_discovery(request):
                 commands.append('channeldown')
 
     elif request_namespace == "Alexa.SceneController":
-        endpointId = request['directive']['endpoint']['endpointId']
         namespace = request["directive"]["header"]["namespace"]
         if endpointId == "skybox-tvguide":
             if request_name == "Activate":
@@ -424,7 +424,7 @@ def handle_non_discovery(request):
                 name = "DeactivationStarted"       
             commands.append('i')
     for command in commands:
-        send_command(command)
+        send_command(command, endpointId)
     return make_response(request, properties, namespace, name)
 
 def make_response(request, properties, namespace, name):       
@@ -457,7 +457,7 @@ def make_response(request, properties, namespace, name):
     }
     return response
 
-def send_command(command):
+def send_command(command, endpointId=''):
     if command == 'sleep':
         time.sleep(1)
         return
@@ -468,7 +468,10 @@ def send_command(command):
         b.append(i)
     l = 12
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect((environ['HOST'], int(environ['PORT'])))
+    port = int(environ['PORT'])
+    if endpointID == 'skybox-002':
+        port = int(environ['PORT_2'])
+    s.connect((environ['HOST'], port))
     recv=s.recv(64)
     while len(recv)<24:
         s.sendall(recv[0:l])
