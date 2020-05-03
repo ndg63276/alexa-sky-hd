@@ -61,10 +61,10 @@
 			"pt": "P",
 			"t": "ComedyCentHD"
 		}, {
-			"c": [4080, 113, 12, 1],
-			"lcn": null,
+			"c": [1143, 113, 12, 1],
+			"lcn": "Sky Comedy HD",
 			"pt": "P",
-			"t": "Universal HD"
+			"t": "Sky Comedy HD"
 		}, {
 			"c": [4074, 114, 12, 1],
 			"lcn": null,
@@ -101,10 +101,10 @@
 			"pt": "P",
 			"t": "ITV4 HD"
 		}, {
-			"c": [4090, 121, 12, 1],
-			"lcn": "Sky Sports Mix HD",
+			"c": [1212, 121, 17, 1],
+			"lcn": null,
 			"pt": "P",
-			"t": "SkySp Mix HD"
+			"t": "Sky Crime HD"
 		}, {
 			"c": [4063, 122, 12, 1],
 			"lcn": null,
@@ -216,10 +216,10 @@
 			"pt": "F",
 			"t": "QUEST"
 		}, {
-			"c": [2202, 145, 12, 0],
-			"lcn": null,
+			"c": [4090, 145, 12, 1],
+			"lcn": "Sky Sports Mix HD",
 			"pt": "P",
-			"t": "Challenge"
+			"t": "SkySp Mix HD"
 		}, {
 			"c": [3352, 146, 12, 0],
 			"lcn": null,
@@ -241,25 +241,25 @@
 			"pt": "F",
 			"t": "Quest Red"
 		}, {
-			"c": [1032, 150, 12, 0],
-			"lcn": null,
+			"c": [1036, 150, 12, 0],
+			"lcn": "Paramount Network",
 			"pt": "F",
-			"t": "5Spike"
+			"t": "Paramount"
 		}, {
-			"c": [1833, 151, 12, 0],
+			"c": [2202, 151, 12, 0],
 			"lcn": null,
 			"pt": "P",
-			"t": "Sky Two"
+			"t": "Challenge"
 		}, {
 			"c": [1832, 152, 12, 0],
 			"lcn": null,
 			"pt": "F",
 			"t": "Pick"
 		}, {
-			"c": [1036, 153, 12, 0],
-			"lcn": "Paramount Network",
+			"c": [3028, 153, 12, 0],
+			"lcn": null,
 			"pt": "F",
-			"t": "Paramount"
+			"t": "5SELECT"
 		}, {
 			"c": [2413, 154, 17, 0],
 			"lcn": null,
@@ -276,25 +276,15 @@
 			"pt": "P",
 			"t": "Crime+Inv HD"
 		}, {
-			"c": [3358, 157, 12, 0],
-			"lcn": null,
+			"c": [4266, 157, 12, 0],
+			"lcn": "True Entertainment",
 			"pt": "F",
-			"t": "Sony Crime"
+			"t": "Sony Channel"
 		}, {
 			"c": [2301, 158, 12, 0],
 			"lcn": null,
 			"pt": "P",
-			"t": "Home"
-		}, {
-			"c": [3028, 159, 12, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "5SELECT"
-		}, {
-			"c": [2502, 160, 12, 0],
-			"lcn": null,
-			"pt": "P",
-			"t": "VH1"
+			"t": "HGTV"
 		}, {
 			"c": [2409, 161, 17, 0],
 			"lcn": "Discovery Turbo",
@@ -311,10 +301,10 @@
 			"pt": "P",
 			"t": "History2"
 		}, {
-			"c": [4320, 164, 12, 0],
+			"c": [1065, 164, 17, 0],
 			"lcn": null,
-			"pt": "P",
-			"t": "Lifetime"
+			"pt": "F",
+			"t": "BLAZE"
 		}, {
 			"c": [4025, 165, 17, 1],
 			"lcn": "Nat Geo Wild HD",
@@ -331,20 +321,20 @@
 			"pt": "P",
 			"t": "Disc.Science"
 		}, {
-			"c": [5254, 168, 12, 0],
+			"c": [1833, 168, 12, 0],
 			"lcn": null,
-			"pt": "F",
-			"t": "YourTV"
+			"pt": "P",
+			"t": "Sky Two"
 		}, {
 			"c": [2012, 169, 12, 0],
 			"lcn": "BBC Alba",
 			"pt": "F",
 			"t": "BBC ALBA"
 		}, {
-			"c": [2207, 170, 12, 0],
+			"c": [1872, 170, 17, 0],
 			"lcn": null,
-			"pt": "P",
-			"t": "Real Lives"
+			"pt": "F",
+			"t": "Together"
 		}, {
 			"c": [2407, 171, 17, 0],
 			"lcn": "Discovery History",
@@ -356,20 +346,20 @@
 			"pt": "P",
 			"t": "DMAX"
 		}, {
-			"c": [3719, 173, 12, 0],
+			"c": [1089, 173, 17, 0],
 			"lcn": null,
 			"pt": "F",
-			"t": "BET:BlackEntTv"
+			"t": "Smithsonian"
 		}, {
 			"c": [5500, 174, 17, 0],
 			"lcn": null,
 			"pt": "F",
 			"t": "PBS America"
 		}, {
-			"c": [3208, 175, 12, 0],
+			"c": [1133, 175, 12, 0],
 			"lcn": null,
-			"pt": "F",
-			"t": "BEN"
+			"pt": null,
+			"t": "Live 360"
 		}, {
 			"c": [2408, 177, 12, 0],
 			"lcn": null,
@@ -381,10 +371,10 @@
 			"pt": "F",
 			"t": "Travel Channel"
 		}, {
-			"c": [4266, 179, 12, 0],
-			"lcn": "True Entertainment",
+			"c": [3358, 179, 12, 0],
+			"lcn": null,
 			"pt": "F",
-			"t": "True Ent"
+			"t": "Sony Crime"
 		}, {
 			"c": [5415, 181, 12, 0],
 			"lcn": null,
@@ -394,37 +384,32 @@
 			"c": [3687, 182, 12, 0],
 			"lcn": null,
 			"pt": "F",
-			"t": "GN TV"
+			"t": "Channel 7"
 		}, {
 			"c": [1827, 183, 12, 0],
 			"lcn": null,
 			"pt": "P",
 			"t": "VICE"
 		}, {
-			"c": [3001, 184, 12, 0],
+			"c": [1102, 184, 12, 0],
 			"lcn": null,
 			"pt": "F",
-			"t": "Horse & Country"
+			"t": "Hi-Impact TV"
 		}, {
 			"c": [1226, 185, 12, 0],
 			"lcn": null,
 			"pt": "F",
 			"t": "Travelxp"
 		}, {
-			"c": [5036, 186, 12, 0],
+			"c": [1058, 186, 12, 0],
+			"lcn": null,
+			"pt": "F",
+			"t": "YANGA!"
+		}, {
+			"c": [4320, 187, 12, 0],
 			"lcn": null,
 			"pt": "P",
-			"t": "AMC from BT"
-		}, {
-			"c": [1065, 187, 17, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "BLAZE"
-		}, {
-			"c": [5297, 189, 12, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "Fascination TV"
+			"t": "Lifetime"
 		}, {
 			"c": [3731, 191, 12, 0],
 			"lcn": null,
@@ -441,25 +426,15 @@
 			"pt": "F",
 			"t": "Vox Africa"
 		}, {
-			"c": [1872, 194, 17, 0],
+			"c": [3719, 195, 12, 0],
 			"lcn": null,
 			"pt": "F",
-			"t": "Together"
-		}, {
-			"c": [1089, 195, 17, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "Smithsonian"
+			"t": "BET:BlackEntTv"
 		}, {
 			"c": [4548, 197, 12, 0],
 			"lcn": null,
 			"pt": "P",
 			"t": "Discovery Shed"
-		}, {
-			"c": [4067, 198, 12, 1],
-			"lcn": null,
-			"pt": "P",
-			"t": "Good Food HD"
 		}, {
 			"c": [3583, 199, 12, 0],
 			"lcn": null,
@@ -516,11 +491,6 @@
 			"pt": "P",
 			"t": "ComedyCent+1"
 		}, {
-			"c": [3207, 213, 12, 0],
-			"lcn": "Universal (+1hr)",
-			"pt": "P",
-			"t": "Universal+1"
-		}, {
 			"c": [2513, 214, 12, 0],
 			"lcn": "Syfy (+1hr)",
 			"pt": "P",
@@ -540,6 +510,11 @@
 			"lcn": "ITV4 (+1hr)",
 			"pt": "F",
 			"t": "ITV4+1"
+		}, {
+			"c": [4330, 221, 17, 0],
+			"lcn": "Real Lives(+1hr)",
+			"pt": "P",
+			"t": "Sky Crime+1"
 		}, {
 			"c": [1791, 224, 12, 0],
 			"lcn": "FOX (+1hr)",
@@ -611,15 +586,15 @@
 			"pt": "F",
 			"t": "5USA+1"
 		}, {
+			"c": [1081, 243, 12, 0],
+			"lcn": null,
+			"pt": "F",
+			"t": "Drama+1"
+		}, {
 			"c": [3621, 244, 12, 0],
 			"lcn": "Quest (+1hr)",
 			"pt": "F",
 			"t": "QUEST+1"
-		}, {
-			"c": [4332, 245, 12, 0],
-			"lcn": "Challenge (+1hr)",
-			"pt": "P",
-			"t": "Challenge+1"
 		}, {
 			"c": [3602, 246, 12, 0],
 			"lcn": "CBS Reality (+1hr)",
@@ -631,10 +606,15 @@
 			"pt": "F",
 			"t": "Quest Red+1"
 		}, {
-			"c": [1076, 250, 12, 0],
-			"lcn": "5Spike (+1hr)",
+			"c": [1082, 250, 12, 0],
+			"lcn": null,
 			"pt": "F",
-			"t": "5Spike+1"
+			"t": "Paramount+1"
+		}, {
+			"c": [4332, 251, 12, 0],
+			"lcn": "Challenge (+1hr)",
+			"pt": "P",
+			"t": "Challenge+1"
 		}, {
 			"c": [1836, 252, 12, 0],
 			"lcn": "Pick TV (+1hr)",
@@ -656,15 +636,15 @@
 			"pt": "P",
 			"t": "Crime+Inv+1"
 		}, {
-			"c": [3216, 257, 12, 0],
-			"lcn": "Sony Crime (+1hr)",
-			"pt": "F",
-			"t": "Sony Crime+1"
+			"c": [5338, 257, 12, 0],
+			"lcn": "True Entertainment (+1hr)",
+			"pt": "P",
+			"t": "Sony Channel+1"
 		}, {
 			"c": [2309, 258, 12, 0],
 			"lcn": "Home (+1hr)",
 			"pt": "P",
-			"t": "Home+1"
+			"t": "HGTV+1"
 		}, {
 			"c": [5245, 261, 17, 0],
 			"lcn": null,
@@ -686,11 +666,6 @@
 			"pt": "P",
 			"t": "Disc.Sci+1"
 		}, {
-			"c": [4330, 270, 12, 0],
-			"lcn": "Real Lives(+1hr)",
-			"pt": "P",
-			"t": "Real Lives+1"
-		}, {
 			"c": [3760, 271, 17, 0],
 			"lcn": "Discovery History (+1hr)",
 			"pt": "P",
@@ -706,75 +681,60 @@
 			"pt": "P",
 			"t": "HomeHealth+1"
 		}, {
-			"c": [5617, 278, 12, 0],
-			"lcn": "Travel Channel (+1hr)",
-			"pt": "F",
-			"t": "Travel Ch+1"
-		}, {
-			"c": [5338, 279, 12, 0],
-			"lcn": "True Entertainment (+1hr)",
-			"pt": "P",
-			"t": "True Ent+1"
-		}, {
-			"c": [2326, 298, 12, 0],
-			"lcn": "Good Food (+1hr)",
-			"pt": "P",
-			"t": "Good Food+1"
-		}, {
 			"c": [4021, 301, 14, 1],
 			"lcn": "Sky Cinema Premiere HD",
 			"pt": "P",
 			"t": "SkyPremiereHD"
 		}, {
-			"c": [4033, 302, 14, 1],
+			"c": [4020, 302, 14, 1],
+			"lcn": null,
+			"pt": "P",
+			"t": "SkyTwilightHD"
+		}, {
+			"c": [4033, 303, 14, 1],
 			"lcn": null,
 			"pt": "P",
 			"t": "Sky Hits HD"
 		}, {
-			"c": [4015, 303, 14, 1],
+			"c": [4015, 304, 14, 1],
 			"lcn": null,
 			"pt": "P",
 			"t": "Sky Greats HD"
 		}, {
-			"c": [4013, 304, 14, 1],
+			"c": [4013, 305, 14, 1],
 			"lcn": "Sky Cinema Disney HD",
 			"pt": "P",
 			"t": "Sky Disney HD"
 		}, {
-			"c": [4018, 305, 14, 1],
+			"c": [4018, 306, 14, 1],
 			"lcn": null,
 			"pt": "P",
 			"t": "Sky Family HD"
 		}, {
-			"c": [4014, 306, 14, 1],
+			"c": [4014, 307, 14, 1],
 			"lcn": null,
 			"pt": "P",
 			"t": "Sky Action HD"
 		}, {
-			"c": [4019, 307, 14, 1],
+			"c": [4019, 308, 14, 1],
 			"lcn": null,
 			"pt": "P",
 			"t": "Sky Comedy HD"
 		}, {
-			"c": [4062, 308, 14, 1],
+			"c": [4062, 309, 14, 1],
 			"lcn": null,
 			"pt": "P",
 			"t": "Sky Thriller HD"
 		}, {
-			"c": [4016, 309, 14, 1],
+			"c": [4016, 310, 14, 1],
 			"lcn": null,
 			"pt": "P",
 			"t": "Sky Drama HD"
 		}, {
-			"c": [4017, 310, 14, 1],
+			"c": [4017, 311, 14, 1],
 			"lcn": null,
 			"pt": "P",
-			"t": "SkyScFi/HorHD"
-		}, {
-			"c": [4020, 311, 14, 1],
-			"lcn": null,
-			"pt": "P",
-			"t": "Sky Select HD"
+			"t": "Sky ScFi/HorHD"
 		}, {
 			"c": [1823, 312, 14, 0],
 			"lcn": "Sky Cinema Premiere (+1hr)",
@@ -814,12 +774,12 @@
 			"c": [3643, 319, 14, 0],
 			"lcn": null,
 			"pt": "F",
-			"t": "True Movies"
+			"t": "Sony Classic"
 		}, {
 			"c": [3751, 320, 14, 0],
 			"lcn": "True Movies (+1hr) ",
 			"pt": "F",
-			"t": "TrueMovies+1"
+			"t": "Sony Classic+1"
 		}, {
 			"c": [3709, 321, 14, 0],
 			"lcn": null,
@@ -834,12 +794,12 @@
 			"c": [3708, 323, 14, 0],
 			"lcn": "Movies4Men",
 			"pt": "F",
-			"t": "movies4men"
+			"t": "Sony Action"
 		}, {
 			"c": [3721, 324, 14, 0],
 			"lcn": "Movies4Men (+1hr)",
 			"pt": "F",
-			"t": "mov4men+1"
+			"t": "Sony Action+1"
 		}, {
 			"c": [4420, 325, 14, 0],
 			"lcn": null,
@@ -851,11 +811,6 @@
 			"pt": "P",
 			"t": "Movies 24+"
 		}, {
-			"c": [3510, 327, 14, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "Retro Movies"
-		}, {
 			"c": [5252, 328, 14, 0],
 			"lcn": null,
 			"pt": "F",
@@ -865,6 +820,11 @@
 			"lcn": null,
 			"pt": "F",
 			"t": "ROK"
+		}, {
+			"c": [1047, 330, 14, 0],
+			"lcn": null,
+			"pt": "F",
+			"t": "OUTtv"
 		}, {
 			"c": [2512, 350, 19, 0],
 			"lcn": null,
@@ -894,7 +854,7 @@
 			"c": [2509, 355, 19, 0],
 			"lcn": null,
 			"pt": "P",
-			"t": "MTV Classic"
+			"t": "MTV CLASSIC"
 		}, {
 			"c": [3508, 356, 19, 0],
 			"lcn": null,
@@ -906,32 +866,27 @@
 			"pt": "P",
 			"t": "MTV ROCKS"
 		}, {
-			"c": [1874, 358, 19, 0],
+			"c": [1350, 358, 19, 0],
 			"lcn": null,
 			"pt": "P",
-			"t": "Box Upfront"
+			"t": "Box Hits"
 		}, {
 			"c": [1802, 359, 19, 0],
 			"lcn": null,
 			"pt": "P",
 			"t": "The Box"
 		}, {
-			"c": [1350, 360, 19, 0],
-			"lcn": null,
-			"pt": "P",
-			"t": "Box Hits"
-		}, {
-			"c": [1858, 361, 19, 0],
+			"c": [1858, 360, 19, 0],
 			"lcn": null,
 			"pt": "P",
 			"t": "KISS"
 		}, {
-			"c": [1877, 362, 19, 0],
+			"c": [1877, 361, 19, 0],
 			"lcn": null,
 			"pt": "P",
 			"t": "Magic"
 		}, {
-			"c": [1853, 363, 19, 0],
+			"c": [1853, 362, 19, 0],
 			"lcn": null,
 			"pt": "P",
 			"t": "Kerrang!"
@@ -939,17 +894,17 @@
 			"c": [3505, 364, 19, 0],
 			"lcn": null,
 			"pt": "F",
-			"t": "Chart Show TV"
+			"t": "Trace Urban"
 		}, {
 			"c": [3935, 365, 19, 0],
 			"lcn": null,
 			"pt": "F",
-			"t": "The Vault"
+			"t": "Trace Vault"
 		}, {
 			"c": [4215, 366, 19, 0],
 			"lcn": null,
 			"pt": "F",
-			"t": "Chart Show Hits"
+			"t": "Trace Latina"
 		}, {
 			"c": [3682, 368, 19, 0],
 			"lcn": null,
@@ -974,7 +929,7 @@
 			"c": [3403, 373, 19, 0],
 			"lcn": null,
 			"pt": "F",
-			"t": "Total Country"
+			"t": "NOW 70s"
 		}, {
 			"c": [4933, 376, 19, 0],
 			"lcn": null,
@@ -999,12 +954,12 @@
 			"c": [1302, 404, 15, 0],
 			"lcn": null,
 			"pt": "P",
-			"t": "SkySp Ashes"
+			"t": "SkySp Cricket"
 		}, {
 			"c": [1322, 405, 15, 0],
 			"lcn": null,
 			"pt": "P",
-			"t": "SkySp Golf"
+			"t": "Sky Sp Golf"
 		}, {
 			"c": [1306, 406, 15, 0],
 			"lcn": "Sky Sports F1",
@@ -1093,38 +1048,28 @@
 		}, {
 			"c": [1634, 429, 15, 1],
 			"lcn": null,
-			"pt": null,
+			"pt": "P",
 			"t": "Premier 2 HD"
-		}, {
-			"c": [3641, 431, 15, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "FrontRunner"
 		}, {
 			"c": [1830, 433, 15, 0],
 			"lcn": null,
 			"pt": "F",
 			"t": "GINXeSportsTV"
 		}, {
-			"c": [1058, 453, 12, 0],
+			"c": [1015, 435, 15, 1],
 			"lcn": null,
 			"pt": "F",
-			"t": "YANGA!"
-		}, {
-			"c": [3406, 454, 12, 0],
-			"lcn": null,
-			"pt": "P",
-			"t": "AIT Int'l"
-		}, {
-			"c": [3411, 456, 12, 0],
-			"lcn": null,
-			"pt": "P",
-			"t": "ABN TV"
+			"t": "LaLigaTV HD"
 		}, {
 			"c": [1137, 457, 12, 0],
 			"lcn": null,
 			"pt": "F",
 			"t": "BBC Scotland"
+		}, {
+			"c": [3208, 458, 12, 0],
+			"lcn": null,
+			"pt": "F",
+			"t": "BEN"
 		}, {
 			"c": [6014, 490, 15, 1],
 			"lcn": "BT Sport Box Office HD",
@@ -1141,10 +1086,10 @@
 			"pt": "P",
 			"t": "SkySpBoxOffHD"
 		}, {
-			"c": [6013, 493, 15, 1],
-			"lcn": "ITV Box Office HD",
-			"pt": "P",
-			"t": "ITV Box Off HD"
+			"c": [1218, 494, 15, 1],
+			"lcn": null,
+			"pt": null,
+			"t": "BTSBoxOffWWE"
 		}, {
 			"c": [4050, 501, 16, 1],
 			"lcn": null,
@@ -1231,11 +1176,6 @@
 			"pt": "F",
 			"t": "Arise News"
 		}, {
-			"c": [5521, 520, 16, 0],
-			"lcn": null,
-			"pt": "P",
-			"t": "News18"
-		}, {
 			"c": [1066, 522, 16, 1],
 			"lcn": null,
 			"pt": "F",
@@ -1266,15 +1206,10 @@
 			"pt": "F",
 			"t": "Inspiration TV"
 		}, {
-			"c": [4245, 585, 22, 0],
+			"c": [1228, 585, 22, 1],
 			"lcn": null,
 			"pt": "F",
-			"t": "LOVEWORLD TV"
-		}, {
-			"c": [6548, 586, 22, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "Gospel Channel"
+			"t": "LoveWorld HD"
 		}, {
 			"c": [3205, 587, 22, 0],
 			"lcn": null,
@@ -1320,6 +1255,11 @@
 			"lcn": null,
 			"pt": "F",
 			"t": "Dunamis TV"
+		}, {
+			"c": [1206, 598, 22, 0],
+			"lcn": null,
+			"pt": null,
+			"t": "Celebration TV"
 		}, {
 			"c": [4077, 601, 18, 1],
 			"lcn": "Cartoon Network HD",
@@ -1376,11 +1316,6 @@
 			"pt": "P",
 			"t": "Disney XD HD"
 		}, {
-			"c": [1844, 612, 18, 0],
-			"lcn": "Disney XD (+1hr)",
-			"pt": "P",
-			"t": "Disney XD+1"
-		}, {
 			"c": [2078, 613, 18, 1],
 			"lcn": null,
 			"pt": "F",
@@ -1419,7 +1354,7 @@
 			"c": [4340, 620, 18, 0],
 			"lcn": null,
 			"pt": "P",
-			"t": "Nick Jr.Too"
+			"t": "NickJrPawPatrol"
 		}, {
 			"c": [6273, 621, 18, 0],
 			"lcn": null,
@@ -1521,10 +1456,10 @@
 			"pt": "P",
 			"t": "QVC Style"
 		}, {
-			"c": [5900, 664, 21, 0],
+			"c": [1244, 664, 21, 1],
 			"lcn": null,
 			"pt": "F",
-			"t": "Ideal World"
+			"t": "Ideal World HD"
 		}, {
 			"c": [3010, 665, 21, 0],
 			"lcn": "Gems TV",
@@ -1591,11 +1526,6 @@
 			"pt": "F",
 			"t": "QVC Beauty"
 		}, {
-			"c": [3800, 678, 21, 0],
-			"lcn": "PaversShoes.tv",
-			"pt": "F",
-			"t": "PaversShoes.tv"
-		}, {
 			"c": [3805, 679, 21, 0],
 			"lcn": null,
 			"pt": "F",
@@ -1611,25 +1541,15 @@
 			"pt": "F",
 			"t": "QVC Extra"
 		}, {
-			"c": [5741, 683, 21, 0],
+			"c": [1245, 683, 21, 1],
 			"lcn": null,
 			"pt": "F",
-			"t": "Create & Craft"
+			"t": "Create&CraftHD"
 		}, {
 			"c": [3012, 684, 21, 0],
 			"lcn": null,
 			"pt": "F",
 			"t": "Craft Extra"
-		}, {
-			"c": [3585, 686, 21, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "SmartShop"
-		}, {
-			"c": [1102, 687, 21, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "Sewing Quarter"
 		}, {
 			"c": [1018, 688, 21, 0],
 			"lcn": null,
@@ -1671,6 +1591,11 @@
 			"pt": "P",
 			"t": "Zee Cinema"
 		}, {
+			"c": [1234, 708, 23, 0],
+			"lcn": null,
+			"pt": "F",
+			"t": "Republic Bharat"
+		}, {
 			"c": [2607, 709, 23, 0],
 			"lcn": null,
 			"pt": "P",
@@ -1691,10 +1616,10 @@
 			"pt": "F",
 			"t": "Foodxp"
 		}, {
-			"c": [1087, 713, 23, 0],
+			"c": [5521, 713, 23, 0],
 			"lcn": null,
-			"pt": "F",
-			"t": "MTV Beats"
+			"pt": "P",
+			"t": "News18"
 		}, {
 			"c": [1105, 714, 23, 0],
 			"lcn": "Colors Cineplex",
@@ -1730,11 +1655,6 @@
 			"lcn": null,
 			"pt": "F",
 			"t": "SONY MAX 2"
-		}, {
-			"c": [1084, 721, 23, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "B4U Plus"
 		}, {
 			"c": [3916, 722, 23, 0],
 			"lcn": "Colors Rishtey",
@@ -1796,11 +1716,6 @@
 			"pt": "F",
 			"t": "Noor TV"
 		}, {
-			"c": [3704, 740, 23, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "Peace TV"
-		}, {
 			"c": [4402, 741, 23, 0],
 			"lcn": null,
 			"pt": "P",
@@ -1831,11 +1746,6 @@
 			"pt": "F",
 			"t": "Madani Chnl"
 		}, {
-			"c": [3224, 747, 23, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "Peace TV Urdu"
-		}, {
 			"c": [3722, 748, 23, 0],
 			"lcn": null,
 			"pt": "F",
@@ -1855,11 +1765,6 @@
 			"lcn": null,
 			"pt": "F",
 			"t": "British Muslim"
-		}, {
-			"c": [5217, 753, 23, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "Safeer TV"
 		}, {
 			"c": [1038, 754, 23, 0],
 			"lcn": null,
@@ -1895,11 +1800,6 @@
 			"lcn": null,
 			"pt": "F",
 			"t": "HUM News"
-		}, {
-			"c": [3000, 762, 23, 0],
-			"lcn": null,
-			"pt": "F",
-			"t": "Prime TV"
 		}, {
 			"c": [5715, 766, 23, 0],
 			"lcn": null,
@@ -1949,7 +1849,7 @@
 			"c": [6753, 779, 23, 0],
 			"lcn": null,
 			"pt": "F",
-			"t": "ATN Bangla UK"
+			"t": "ATN"
 		}, {
 			"c": [4540, 780, 23, 0],
 			"lcn": null,
@@ -2051,10 +1951,10 @@
 			"pt": "P",
 			"t": "ComedyCentral"
 		}, {
-			"c": [1842, 813, 12, 0],
-			"lcn": null,
+			"c": [1177, 813, 12, 0],
+			"lcn": "Sky Comedy",
 			"pt": "P",
-			"t": "Universal"
+			"t": "Sky Comedy"
 		}, {
 			"c": [2505, 814, 12, 0],
 			"lcn": null,
@@ -2081,10 +1981,10 @@
 			"pt": null,
 			"t": "ITV4"
 		}, {
-			"c": [4091, 819, 12, 0],
-			"lcn": "Sky Sports Mix",
+			"c": [2207, 819, 17, 0],
+			"lcn": null,
 			"pt": "P",
-			"t": "SkySp Mix"
+			"t": "Sky Crime"
 		}, {
 			"c": [1752, 820, 12, 0],
 			"lcn": null,
@@ -2161,70 +2061,70 @@
 			"pt": "P",
 			"t": "Animal Planet"
 		}, {
+			"c": [4091, 838, 12, 0],
+			"lcn": "Sky Sports Mix",
+			"pt": "P",
+			"t": "SkySp Mix"
+		}, {
 			"c": [1847, 839, 17, 0],
 			"lcn": "National Geographic Wild",
 			"pt": "P",
 			"t": "Nat Geo Wild"
-		}, {
-			"c": [5037, 840, 12, 1],
-			"lcn": null,
-			"pt": "P",
-			"t": "AMC from BTHD"
 		}, {
 			"c": [1409, 842, 14, 0],
 			"lcn": "Sky Cinema Premiere",
 			"pt": "P",
 			"t": "Sky Premiere"
 		}, {
-			"c": [1814, 843, 14, 0],
+			"c": [1811, 843, 14, 0],
+			"lcn": null,
+			"pt": "P",
+			"t": "Sky Twilight"
+		}, {
+			"c": [1814, 844, 14, 0],
 			"lcn": null,
 			"pt": "P",
 			"t": "Sky Hits"
 		}, {
-			"c": [1815, 844, 14, 0],
+			"c": [1815, 845, 14, 0],
 			"lcn": null,
 			"pt": "P",
 			"t": "Sky Greats"
 		}, {
-			"c": [1838, 845, 14, 0],
+			"c": [1838, 846, 14, 0],
 			"lcn": "Sky Cinema Disney",
 			"pt": "P",
 			"t": "Sky Disney"
 		}, {
-			"c": [1808, 846, 14, 0],
+			"c": [1808, 847, 14, 0],
 			"lcn": null,
 			"pt": "P",
 			"t": "Sky Family"
 		}, {
-			"c": [1001, 847, 14, 0],
+			"c": [1001, 848, 14, 0],
 			"lcn": null,
 			"pt": "P",
 			"t": "Sky Action"
 		}, {
-			"c": [1002, 848, 14, 0],
+			"c": [1002, 849, 14, 0],
 			"lcn": null,
 			"pt": "P",
-			"t": "Sky Comedy"
+			"t": "Sky Comedy Cinema"
 		}, {
-			"c": [1818, 849, 14, 0],
+			"c": [1818, 850, 14, 0],
 			"lcn": "Sky Cinema Thriller",
 			"pt": "P",
 			"t": "Sky Thriller"
 		}, {
-			"c": [1816, 850, 14, 0],
+			"c": [1816, 851, 14, 0],
 			"lcn": null,
 			"pt": "P",
 			"t": "Sky Drama"
 		}, {
-			"c": [1807, 851, 14, 0],
+			"c": [1807, 852, 14, 0],
 			"lcn": null,
 			"pt": "P",
-			"t": "Sky ScFi/Horror"
-		}, {
-			"c": [1811, 852, 14, 0],
-			"lcn": null,
-			"pt": "P",
-			"t": "Sky Select"
+			"t": "Sky SciFi/Horror"
 		}, {
 			"c": [1627, 853, 14, 0],
 			"lcn": null,
@@ -2249,7 +2149,7 @@
 			"c": [4081, 858, 15, 1],
 			"lcn": "Sky Sports Cricket HD",
 			"pt": "P",
-			"t": "SkySp Ashes HD"
+			"t": "SkySpCricketHD"
 		}, {
 			"c": [4026, 859, 15, 1],
 			"lcn": null,
@@ -2285,11 +2185,6 @@
 			"lcn": null,
 			"pt": "P",
 			"t": "Eurosport 2"
-		}, {
-			"c": [2308, 866, 12, 0],
-			"lcn": null,
-			"pt": "P",
-			"t": "Good Food"
 		}, {
 			"c": [3625, 867, 15, 1],
 			"lcn": null,
@@ -2520,11 +2415,6 @@
 			"lcn": "BBC Red Button 1",
 			"pt": "F",
 			"t": "BBC RB 1"
-		}, {
-			"c": [4101, 993, 12, 1],
-			"lcn": null,
-			"pt": "P",
-			"t": "Sky Insider HD"
 		}]
 	}
 }
