@@ -13,7 +13,7 @@ import json
 import uuid
 import socket
 from os import environ
-from botocore.vendored import requests
+import requests
 from fuzzywuzzy import fuzz
 # Setup logger
 logger = logging.getLogger()
@@ -203,28 +203,42 @@ def lambda_handler(request, context):
         logger.error(error)
         raise
 
+
 def get_utc_timestamp(seconds=None):
     return time.strftime("%Y-%m-%dT%H:%M:%S.00Z", time.gmtime(seconds))
+
 
 def get_uuid():
     return str(uuid.uuid4())
 
-def get_channels():
-    if 'Italia' in environ:
-        return get_channels_it()
-    else:
-        return get_channels_en()
 
-def get_channels_it():
-    url = 'https://raw.githubusercontent.com/ndg63276/alexa-sky-hd/master/channels-it.json'
-    r=requests.get(url)
-    channels = r.json()
+def get_channels_file(url):
+    if url.startswith('http'):
+        r = requests.get(url)
+        channels = r.json()
+    else:
+        with open(url) as f:
+            channels = json.load(f)
     return channels
 
-def get_channels_en():
-    url = 'http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/1/'
-    a = requests.get(url)
-    chan_list = a.json()['init']['channels']
+
+def get_channels():
+    if 'CHANNELS_FILE' in environ:
+        url = environ['CHANNELS_FILE']
+    elif 'Italia' in environ:
+        url = 'https://raw.githubusercontent.com/ndg63276/alexa-sky-hd/master/channels-it.json'
+    else:
+        url = 'http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/1/'
+    channels_json = get_channels_file(url)
+    if 'init' in channels_json:
+        channels = parse_channels_json(channels_json)
+    else:
+        channels = channels_json
+    return channels
+
+
+def parse_channels_json(channels_json):
+    chan_list = channels_json['init']['channels']
     channels = {}
     for chan in chan_list:
         names = []
@@ -246,9 +260,10 @@ def get_channels_en():
         channels[chan_number] = names
     return channels
 
+
 def get_channel_number(channels, channel_request):
     hd = False
-    if 'HD' in environ and environ['HD'] == True:
+    if 'HD' in environ and environ['HD'] == 'True':
         hd = True
     plus_one_request = False
     if ' plus one' in channel_request:
@@ -262,23 +277,26 @@ def get_channel_number(channels, channel_request):
             if score > best_score:
                 best_score = score
                 channel_number = key
-                print channel_number, score
+                print 'normal', channel_number, score
             if hd:
                 score = fuzz.ratio(chan.lower(), channel_request.lower()+' hd')
                 if score >= best_score:
                     best_score = score
                     channel_number = key
-                    print channel_number, score
+                    print 'hd', channel_number, score
             if plus_one_request:
                 plus_one_score = fuzz.ratio(chan.lower(), plus_one_request.lower())
                 if plus_one_score > best_plus_one_score:
                     best_plus_one_score = plus_one_score
                     plus_one_channel_number = key
-                    print plus_one_channel_number, plus_one_score
+                    print 'plus_one', plus_one_channel_number, plus_one_score
+        if best_score == 100:
+            break
     if plus_one_request:
         if best_plus_one_score > best_score and plus_one_channel_number < 200:
             channel_number = plus_one_channel_number + 100
     return channel_number
+
 
 def handle_discovery(request):
     endpoints = []
@@ -427,6 +445,7 @@ def handle_non_discovery(request):
         send_command(command, endpointId)
     return make_response(request, properties, namespace, name)
 
+
 def make_response(request, properties, namespace, name):       
     response = {
         "context": {
@@ -457,6 +476,7 @@ def make_response(request, properties, namespace, name):
     }
     return response
 
+
 def send_command(command, endpointId=''):
     if command == 'sleep':
         time.sleep(1)
@@ -485,6 +505,7 @@ def send_command(command, endpointId=''):
     s.sendall(b)
     s.close()
 
+
 def get_endpoint(appliance):
     endpoint = {
         "endpointId": appliance["applianceId"],
@@ -497,6 +518,7 @@ def get_endpoint(appliance):
     }
     endpoint["capabilities"] = get_capabilities(appliance)
     return endpoint
+
 
 def get_capabilities(appliance):
     displayCategories = appliance["displayCategories"]
@@ -565,3 +587,4 @@ def get_capabilities(appliance):
     capabilities.append(endpoint_health_capability)
     capabilities.append(alexa_interface_capability)
     return capabilities
+
