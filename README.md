@@ -119,5 +119,104 @@ amzn1.ask.skill.bacf6378-76b7-8734-bcd5-23f456abcdef
 4. Log in with your Amazon username and password. Make sure to select Keep Me Signed In.
 5. It should tell you you have successfully linked your account, and prompt you to Discover Devices. Do that and it should find your Sky box, and add some scenes.
 
+## Regions
+The skill defaults to a London channel list. If you find some of the channels are wrong, you could try setting your region. To do this, create another environment variable in your lambda function with the key CHANNELS_FILE. Then set the value according to the table below:
+
+|Region           | Value|
+|-----------------| -----|
+|Atherstone HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/19|
+|Atherstone SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/19|
+|Border England HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/12|
+|Border England SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/12|
+|Border Scotland HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4102/36|
+|Border Scotland SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4098/36|
+|Brighton HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/65|
+|Brighton SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/65|
+|Central Midlands HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/3|
+|Central Midlands SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/3|
+|Channel Isles HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4104/34|
+|Channel Isles SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4100/34|
+|East Midlands HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/20|
+|East Midlands SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/20|
+|Essex HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/2|
+|Essex SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/2|
+|Gloucester HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/24|
+|Gloucester SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/24|
+|Grampian HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4102/35|
+|Grampian SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4098/35|
+|Granada HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/7|
+|Granada SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/7|
+|Henley On Thames HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/70|
+|Henley On Thames SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/70|
+|HTV Wales HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/43|
+|HTV Wales SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/43|
+|HTV West HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/4|
+|HTV West SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/4|
+|HTV West / Thames Valley HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/63|
+|HTV West / Thames Valley SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/63|
+|Humber HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/29|
+|Humber SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/29|
+|London HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/1|
+|London SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/1|
+|London / Essex HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/18|
+|London / Essex SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/18|
+|London / Thames Valley HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/66|
+|London / Thames Valley SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/66|
+|London Kent HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/64|
+|London Kent SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/64|
+|Meridian East HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/11|
+|Meridian East SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/11|
+|Meridian North HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/68|
+|Meridian North SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/68|
+|Meridian South HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/5|
+|Meridian South SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/5|
+|Meridian South East HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/10|
+|Meridian South East SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/10|
+|Merseyside HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/45|
+|Merseyside SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/45|
+|Norfolk HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/21|
+|Norfolk SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/21|
+|North East Midlands HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/62|
+|North East Midlands SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/62|
+|North West Yorkshire HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/8|
+|North West Yorkshire SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/8|
+|North Yorkshire HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/26|
+|North Yorkshire SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/26|
+|Northern Ireland HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4104/33|
+|Northern Ireland SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4100/33|
+|Oxford HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/71|
+|Oxford SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/71|
+|Republic of Ireland HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4104/50|
+|Republic of Ireland SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4100/50|
+|Ridge Hill HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/41|
+|Ridge Hill SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/41|
+|Scarborough HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/61|
+|Scarborough SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/61|
+|Scottish East HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4102/37|
+|Scottish East SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4098/37|
+|Scottish West HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4102/38|
+|Scottish West SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4098/38|
+|Sheffield HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/60|
+|Sheffield SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/60|
+|South Lakeland HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/28|
+|South Lakeland SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/28|
+|South Yorkshire HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/72|
+|South Yorkshire SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/72|
+|Tees HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/69|
+|Tees SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/69|
+|Thames Valley HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/9|
+|Thames Valley SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/9|
+|Tring HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/27|
+|Tring SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/27|
+|Tyne HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/13|
+|Tyne SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/13|
+|West Anglia HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/25|
+|West Anglia SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/25|
+|West Dorset HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4103/67|
+|West Dorset SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4099/67|
+|Westcountry HD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4101/6|
+|Westcountry SD|http://epgservices.sky.com/5.1.1/api/2.1/region/json/4097/6|
+
+
 ## Thank yous
 This wouldn't have been possible without the work by dalhundal, and in particular his sky-remote-cli project (https://github.com/dalhundal/sky-remote-cli)
