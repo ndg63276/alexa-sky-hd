@@ -13,9 +13,9 @@ This skill seems to work with a Sky Q box, though I don't have one to test with 
 2. "Alexa, turn on Spotify"
 3. "Alexa, turn on YouTube"
 ### Updates
-7th April 2018: Sky seem to have removed the json page listing all their channels, so channel changing is broken. I have made my own version, but you will need to re-download Alexa-Skybox.zip and re-upload it to Lambda.
+7th April 2018: Sky seem to have removed the json page listing all their channels, so channel changing is broken. I have made my own version, but you will need to re-download lambda_function.zip and re-upload it to Lambda.
 
-3rd May 2018: Sky have renumbered lots of channels. Most should just work, but anything in the range 200-299 (plus one channels) will be broken, until you re-download Alexa-Skybox.zip and re-upload it to Lambda.
+3rd May 2018: Sky have renumbered lots of channels. Most should just work, but anything in the range 200-299 (plus one channels) will be broken, until you re-download lambda_function.zip and re-upload it to Lambda.
 
 7th August 2018: Sky have renamed some channels, notably Living has become Witness. I have updated the HD list, and fixed a bug that meant you could never be a HD customer.
 
@@ -76,7 +76,7 @@ amzn1.ask.skill.bacf6378-76b7-8734-bcd5-23f456abcdef
 11. In the middle of the screen, click on the box that says "SkyBox".
 12. Under "Function Code", make sure Runtime says "Python 2.7", and Handler says "lambda_function.lambda_handler"
 13. Under "Code Entry Type", select "Upload a .ZIP file".
-14. Download this file - https://github.com/ndg63276/alexa-sky-hd/raw/master/Alexa-Skybox.zip - then in Lambda, click on the "Upload" button, and upload that Alexa-Skybox.zip file.
+14. Download this file - https://github.com/ndg63276/alexa-sky-hd/raw/master/lambda_function.zip - then in Lambda, click on the "Upload" button, and upload that lambda_function.zip file.
 15. Enter the following into the Environment Variables Section:
 
 |Key           | Value|
@@ -87,7 +87,7 @@ amzn1.ask.skill.bacf6378-76b7-8734-bcd5-23f456abcdef
 |SKY_BOX_NAME  |(Whatever you call your Sky box, eg Sky Box, or Sky HD)|
 
 
-16. Click "Save" in the top right. This will upload the Alexa-Skybox.zip file to Lambda. This may take a few minutes depending on your connection speed.
+16. Click "Save" in the top right. This will upload the lambda_function.zip file to Lambda. This may take a few minutes depending on your connection speed.
 17. Make a note of the ARN from the top right (it's the text after ARN - it won't be in bold and will look a bit like this arn:aws:lambda:eu-west-1:XXXXXXX:function:Skybox).
 
 ### More Alexa Skill setup
