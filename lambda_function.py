@@ -343,6 +343,10 @@ def handle_non_discovery(request):
             "timeOfSample": get_utc_timestamp(),
             "uncertaintyInMilliseconds": 500
         } ]
+    elif request_namespace == "Alexa.KeypadController":
+        keystroke = request["directive"]["payload"]["keystroke"]
+        if keystroke == "SELECT":
+            commands.append("select")
 
     elif request_namespace == "Alexa.PlaybackController":
         if request_name == "Play":
@@ -537,23 +541,32 @@ def get_capabilities(appliance):
                 }
             },
             {  
-                "type":"AlexaInterface",
-                "interface":"Alexa.ChannelController",
-                "version":"1.0",
-                "properties":{  
-                    "supported":[  
-                       { "name":"channel" }
+                "type": "AlexaInterface",
+                "interface": "Alexa.ChannelController",
+                "version": "1.0",
+                "properties": {
+                    "supported": [
+                        { "name":"channel" }
                     ]
                 }
             },
             {  
-                     "type":"AlexaInterface",
-                     "interface":"Alexa.PlaybackController",
-                     "version":"1.0",
-                     "properties":{ },
-                     "supportedOperations" : ["Play", "Pause", "Rewind", "FastForward", "Stop"] 
+                 "type": "AlexaInterface",
+                 "interface": "Alexa.PlaybackController",
+                 "version": "1.0",
+                 "properties": { },
+                 "supportedOperations": ["Play", "Pause", "Rewind", "FastForward", "Stop"]
             },
-
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.KeypadController",
+                "version": "3",
+                "keys": [
+                    "INFO", "MORE", "SELECT",
+                    "UP", "DOWN", "LEFT", "RIGHT",
+                    "PAGE_UP", "PAGE_DOWN", "PAGE_LEFT", "PAGE_RIGHT"
+                ]
+            },
         ]
 
     elif displayCategories == ["SCENE_TRIGGER"]:
