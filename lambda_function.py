@@ -347,7 +347,7 @@ def handle_non_discovery(request):
         keystroke = request["directive"]["payload"]["keystroke"]
         if keystroke == "SELECT":
             commands.append("select")
-        if keystroke == "INFO":
+        if keystroke == "INFO" or keystroke == "MORE":
             commands.append("i")
 
     elif request_namespace == "Alexa.PlaybackController":
