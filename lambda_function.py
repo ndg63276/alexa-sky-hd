@@ -268,7 +268,7 @@ def get_channel_number(channels, channel_request):
     plus_one_request = False
     if ' plus one' in channel_request:
         plus_one_request = channel_request.replace(' plus one', '')
-    print "plus_one_request: "+str(plus_one_request)
+    print("plus_one_request: "+str(plus_one_request))
     best_score = 0
     best_plus_one_score = 0
     for key in channels.keys():
@@ -277,19 +277,19 @@ def get_channel_number(channels, channel_request):
             if score > best_score:
                 best_score = score
                 channel_number = key
-                print 'normal', channel_number, score
+                print('normal', channel_number, score)
             if hd:
                 score = fuzz.ratio(chan.lower(), channel_request.lower()+' hd')
                 if score >= best_score:
                     best_score = score
                     channel_number = key
-                    print 'hd', channel_number, score
+                    print('hd', channel_number, score)
             if plus_one_request:
                 plus_one_score = fuzz.ratio(chan.lower(), plus_one_request.lower())
                 if plus_one_score > best_plus_one_score:
                     best_plus_one_score = plus_one_score
                     plus_one_channel_number = key
-                    print 'plus_one', plus_one_channel_number, plus_one_score
+                    print('plus_one', plus_one_channel_number, plus_one_score)
         if best_score == 100:
             break
     if plus_one_request:
@@ -488,7 +488,7 @@ def send_command(command, endpointId=''):
         time.sleep(1)
         return
     code=commands[command]
-    commandBytes = [4,1,0,0,0,0,224 + (code/16), code % 16]
+    commandBytes = [4,1,0,0,0,0,224 + int(code/16), code % 16]
     b=bytearray()
     for i in commandBytes:
         b.append(i)
