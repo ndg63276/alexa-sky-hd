@@ -71,10 +71,10 @@ amzn1.ask.skill.bacf6378-76b7-8734-bcd5-23f456abcdef
 3. Select Lambda from the AWS Services menu at the top left.
 4. Click on the "Create Function" button.
 5. Select "Author From Scratch", and name the Lambda Function 'SkyBox'
-6. Select the runtime as "Python 2.7", and click "Create Function".
+6. Select the runtime as "Python 3.7", and click "Create Function".
 10. Click "Add Trigger" on the left hand side, and select "Alexa Smart Home" (NOTE - if you do not see Alexa Smart Home as an option then you are in the wrong AWS region). Under "Configure Triggers", in the box that says Application ID, put your Skill ID from earlier, something like amzn.ask.skill.bacf6378-76b7-8734-bcd5-23f456abcdef. Then click Add.
 11. In the middle of the screen, click on the box that says "SkyBox".
-12. Under "Function Code", make sure Runtime says "Python 2.7", and Handler says "lambda_function.lambda_handler"
+12. Under "Function Code", make sure Runtime says "Python 3.7", and Handler says "lambda_function.lambda_handler"
 13. Under "Code Entry Type", select "Upload a .ZIP file".
 14. Download this file - https://github.com/ndg63276/alexa-sky-hd/raw/master/lambda_function.zip - then in Lambda, click on the "Upload" button, and upload that lambda_function.zip file.
 15. Enter the following into the Environment Variables Section:
