@@ -67,7 +67,7 @@ amzn1.ask.skill.bacf6378-76b7-8734-bcd5-23f456abcdef
 ### AWS Lambda Setup
 
 1. Go to http://aws.amazon.com/. You will need to set-up an AWS account (the basic one will do fine) if you don't have one already. Make sure you use the same Amazon account that your Echo device is registered to. **Note - you will need a credit or debit card to set up an AWS account - there is no way around this. There should be no charges from using this skill in a normal way, though I am not resposible if there are.**
-2.  Go to the drop down "Location" menu at the top right and ensure you select "Europe (Ireland)". This is important as not many regions support Alexa.
+2. Go to the drop down "Location" menu at the top right and select one close to you, eg Europe (London).
 3. Select Lambda from the AWS Services menu at the top left.
 4. Click on the "Create Function" button.
 5. Select "Author From Scratch", and name the Lambda Function 'SkyBox'
@@ -76,8 +76,8 @@ amzn1.ask.skill.bacf6378-76b7-8734-bcd5-23f456abcdef
 11. In the middle of the screen, click on the box that says "SkyBox".
 12. Under "Function Code", make sure Runtime says "Python 3.7", and Handler says "lambda_function.lambda_handler"
 13. Under "Code Entry Type", select "Upload a .ZIP file".
-14. Download this file - https://github.com/ndg63276/alexa-sky-hd/raw/master/lambda_function.zip - then in Lambda, click on the "Upload" button, and upload that lambda_function.zip file.
-15. Enter the following into the Environment Variables Section:
+14. Download this file - https://github.com/ndg63276/alexa-sky-hd/raw/master/lambda_function.zip - then in Lambda, click on the "Upload From" button, select "Zip file", and upload that lambda_function.zip file.
+15. Go to the Configuration tab, and enter the following into the Environment Variables Section:
 
 |Key           | Value|
 |--------------| -----|
