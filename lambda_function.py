@@ -277,13 +277,14 @@ def get_channel_number(channels, channel_request):
             if score > best_score:
                 best_score = score
                 channel_number = key
-                print('normal', channel_number, score)
+                print(chan+'normal', channel_number, score)
+
             if hd:
                 score = fuzz.ratio(chan.lower(), channel_request.lower()+' hd')
                 if score >= best_score:
                     best_score = score
                     channel_number = key
-                    print('hd', channel_number, score)
+                    print(chan+'hd', channel_number, score)
             if plus_one_request:
                 plus_one_score = fuzz.ratio(chan.lower(), plus_one_request.lower())
                 if plus_one_score > best_plus_one_score:
@@ -396,33 +397,46 @@ def handle_non_discovery(request):
         namespace = request["directive"]["header"]["namespace"]
         if endpointId == "skybox-tvguide":
             if request_name == "Activate":
-                commands.append('tvguide')
-                commands.append('select')
-                commands.append('select')
+                commands=['tvguide','sleep','down','sleep','select','select']
                 name = "ActivationStarted"
             if request_name == "Deactivate":
-                commands.append('sky')
+                commands=['backup']
                 name = "DeactivationStarted"
         elif endpointId == "skyq-netflix":
             if request_name == "Activate":
-                commands=['tvguide','sleep','right','down','down','down','down','down','select']
+                commands=['tvguide','sleep','down','down','down','down','down','down','down','down','down','down']
                 name = "ActivationStarted"
+                for _ in range(3):
+                    commands.append('sleep')
+                    commands.append('right')
+                commands.append('sleep')
+                commands.append('select')
             if request_name == "Deactivate":
-                commands.append('sky')
+                commands=['sky','sleep','backup']
                 name = "DeactivationStarted"
         elif endpointId == "skyq-spotify":
             if request_name == "Activate":
-                commands=['tvguide','sleep','right','down','down','down','down','down','right','select']
+                commands=['tvguide','sleep','down','down','down','down','down','down','down','down','down','down']
+                for _ in range(6):
+                    commands.append('sleep')
+                    commands.append('right')
+                commands.append('sleep')
+                commands.append('select')
                 name = "ActivationStarted"
             if request_name == "Deactivate":
-                commands.append('sky')
+                commands=['sky','sleep','backup']
                 name = "DeactivationStarted"
         elif endpointId == "skyq-youtube":
             if request_name == "Activate":
-                commands=['tvguide','sleep','right','down','down','down','down','down','right','right','select']
+                commands=['tvguide','sleep','down','down','down','down','down','down','down','down','down','down']
+                for _ in range(4):
+                    commands.append('sleep')
+                    commands.append('right')
+                commands.append('sleep')
+                commands.append('select')
                 name = "ActivationStarted"
             if request_name == "Deactivate":
-                commands.append('sky')
+                commands=['sky','sleep','backup']
                 name = "DeactivationStarted"
         elif endpointId == "skybox-subtitles":
             if request_name == "Activate":
@@ -602,4 +616,3 @@ def get_capabilities(appliance):
     capabilities.append(endpoint_health_capability)
     capabilities.append(alexa_interface_capability)
     return capabilities
-
